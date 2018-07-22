@@ -1,0 +1,21 @@
+{
+    "plugins": [
+        "betterchinese"
+    ],
+    "pluginsConfig": {},
+     "variables": {
+        "authorUrl": "http://www.swaroopch.com/about/",
+        "buyBookUrl": "http://www.swaroopch.com/buybook/",
+        "contactUrl": "http://www.swaroopch.com/contact/",
+        "downloadUrl": "https://www.gitbook.com/book/swaroopch/byte-of-python/details",
+        "officialUrl": "http://python.swaroopch.com/",
+        "pythonVersion": "3.5.1",
+        "sourceUrl": "https://github.com/swaroopch/byte-of-python",
+        "vimBookUrl": "http://vim.swaroopch.com/",
+        "sctransUrl": "https://bop.mol.uno",
+        "translator": "https://molun.net",
+        "transdownloadurl": "https://www.gitbook.com/book/lenkimo/byte-of-python-chinese-edition/",
+        "transsourceurl": "https://github.com/LenKiMo/byte-of-python"
+    }
+
+}
