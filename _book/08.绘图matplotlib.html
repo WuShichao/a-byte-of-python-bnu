@@ -1,0 +1,611 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>第八章：绘图matplotlib · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="09.面向对象编程.html" />
+    
+    
+    <link rel="prev" href="07.科学计算numpy和scipy.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    序言
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1" data-path="00.1.献词.html">
+            
+                <a href="00.1.献词.html">
+            
+                    
+                    献词
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2" data-path="00.2.前言.html">
+            
+                <a href="00.2.前言.html">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3" data-path="00.3.译者前言.html">
+            
+                <a href="00.3.译者前言.html">
+            
+                    
+                    译者前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    第一章：基础介绍
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="01.1.基础介绍：关于Python.html">
+            
+                <a href="01.1.基础介绍：关于Python.html">
+            
+                    
+                    基础介绍：关于 Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="01.2.基础介绍：安装.html">
+            
+                <a href="01.2.基础介绍：安装.html">
+            
+                    
+                    基础介绍：安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="01.3.基础介绍：第一步.html">
+            
+                <a href="01.3.基础介绍：第一步.html">
+            
+                    
+                    基础介绍：第一步
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="01.4.基础介绍：基础.html">
+            
+                <a href="01.4.基础介绍：基础.html">
+            
+                    
+                    基础介绍：基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="01.5.基础介绍：运算符和表达式.html">
+            
+                <a href="01.5.基础介绍：运算符和表达式.html">
+            
+                    
+                    基础介绍：运算符与表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="02.控制流.html">
+            
+                <a href="02.控制流.html">
+            
+                    
+                    第二章：控制流
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="03.数据结构.html">
+            
+                <a href="03.数据结构.html">
+            
+                    
+                    第三章：数据结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="04.函数.html">
+            
+                <a href="04.函数.html">
+            
+                    
+                    第四章：函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="05.模块.html">
+            
+                <a href="05.模块.html">
+            
+                    
+                    第五章：模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="06.输入与输出.html">
+            
+                <a href="06.输入与输出.html">
+            
+                    
+                    第六章：输入与输出
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="07.科学计算numpy和scipy.html">
+            
+                <a href="07.科学计算numpy和scipy.html">
+            
+                    
+                    第七章：科学计算numpy和scipy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.9" data-path="08.绘图matplotlib.html">
+            
+                <a href="08.绘图matplotlib.html">
+            
+                    
+                    第八章：绘图matplotlib
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="09.面向对象编程.html">
+            
+                <a href="09.面向对象编程.html">
+            
+                    
+                    第九章：面向对象编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="10.解决问题.html">
+            
+                <a href="10.解决问题.html">
+            
+                    
+                    第十章：解决问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="11.异常.html">
+            
+                <a href="11.异常.html">
+            
+                    
+                    第十一章：异常
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="12.标准库.html">
+            
+                <a href="12.标准库.html">
+            
+                    
+                    第十二章：标准库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="13.更多.html">
+            
+                <a href="13.更多.html">
+            
+                    
+                    更多
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="14.迈出下一步.html">
+            
+                <a href="14.迈出下一步.html">
+            
+                    
+                    迈出下一步
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="15.开放源代码软件.html">
+            
+                <a href="15.开放源代码软件.html">
+            
+                    
+                    附录：FLOSS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="16.关于.html">
+            
+                <a href="16.关于.html">
+            
+                    
+                    附录：版本变迁
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="17.修订历史.html">
+            
+                <a href="17.修订历史.html">
+            
+                    
+                    附录：本书由来与修订历史
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="18.翻译.html">
+            
+                <a href="18.翻译.html">
+            
+                    
+                    附录：翻译
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="19.如何翻译.html">
+            
+                <a href="19.如何翻译.html">
+            
+                    
+                    附录：如何翻译
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="20.反馈,md">
+            
+                <span>
+            
+                    
+                    反馈
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >第八章：绘图matplotlib</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="07.科学计算numpy和scipy.html" class="navigation navigation-prev " aria-label="Previous page: 第七章：科学计算numpy和scipy">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="09.面向对象编程.html" class="navigation navigation-next " aria-label="Next page: 第九章：面向对象编程">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"第八章：绘图matplotlib","level":"1.9","depth":1,"next":{"title":"第九章：面向对象编程","level":"1.10","depth":1,"path":"09.面向对象编程.md","ref":"09.面向对象编程.md","articles":[]},"previous":{"title":"第七章：科学计算numpy和scipy","level":"1.8","depth":1,"path":"07.科学计算numpy和scipy.md","ref":"07.科学计算numpy和scipy.md","articles":[]},"dir":"neutral"},"config":{"gitbook":"*","theme":"default","variables":{"buyBookUrl":"http://www.swaroopch.com/buybook/","officialUrl":"http://python.swaroopch.com/","authorUrl":"http://www.swaroopch.com/about/","downloadUrl":"https://www.gitbook.com/book/swaroopch/byte-of-python/details","vimBookUrl":"http://vim.swaroopch.com/","transsourceurl":"https://github.com/LenKiMo/byte-of-python","contactUrl":"http://www.swaroopch.com/contact/","sourceUrl":"https://github.com/swaroopch/byte-of-python","sctransUrl":"https://bop.mol.uno","translator":"https://molun.net","pythonVersion":"3.5.1","transdownloadurl":"https://www.gitbook.com/book/lenkimo/byte-of-python-chinese-edition/"},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"08.绘图matplotlib.md","mtime":"2018-08-03T13:38:05.009Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-08-12T13:17:07.244Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

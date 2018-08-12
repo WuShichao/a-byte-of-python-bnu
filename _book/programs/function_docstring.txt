@@ -1,0 +1,5 @@
+$ python function_docstring.py
+5 is maximum
+打印两个数值中的最大数。
+
+    这两个数都应该是整数
