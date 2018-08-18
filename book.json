@@ -16,5 +16,17 @@
         "translator": "https://molun.net",
         "transdownloadurl": "https://www.gitbook.com/book/lenkimo/byte-of-python-chinese-edition/",
         "transsourceurl": "https://github.com/LenKiMo/byte-of-python"
-    }
+    },
+    "pdf": {
+        "pageNumbers": true, 
+        "fontFamily": "Arial",
+        "fontSize": 14,
+        "paperSize": "a4",
+        "margin": {
+          "right": 62,
+          "left": 62,
+          "top": 56,
+          "bottom": 56
+        }
+      }
 }
