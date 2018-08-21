@@ -1,8 +1,15 @@
 {
-    "plugins": [
-        
+    "plugins": ["numbered-headings",
+    "-search",
+    "search-pro"        
     ],
-    "pluginsConfig": {},
+    "pluginsConfig": {
+        "search-pro": {
+        "cutWordLib": "nodejieba",
+        "defineWord" : ["Gitbook Use"]
+    }    
+        },
+    
      "variables": {
         "authorUrl": "http://www.swaroopch.com/about/",
         "buyBookUrl": "http://www.swaroopch.com/buybook/",
@@ -17,6 +24,7 @@
         "transdownloadurl": "https://www.gitbook.com/book/lenkimo/byte-of-python-chinese-edition/",
         "transsourceurl": "https://github.com/LenKiMo/byte-of-python"
     },
+    
     "pdf": {
         "pageNumbers": true, 
         "fontFamily": "Arial",
