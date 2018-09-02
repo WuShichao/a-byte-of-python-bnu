@@ -1,7 +1,10 @@
-{
-    "plugins": ["numbered-headings",
-    "-search",
-    "search-pro"        
+{   "title" : "简明Python教程-BNU版",
+    "author" : "",
+    "description" : "北师大天文系Python教材",
+    "language": "zh-hans",
+    
+    "plugins": ["numbered-headings","betterchinese",
+    "-search", "search-pro"        
     ],
     "pluginsConfig": {
         "search-pro": {
