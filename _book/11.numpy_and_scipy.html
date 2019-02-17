@@ -1,0 +1,612 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>12 扩展：科学计算 numpy和scipy · 简明Python教程-BNU版</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-betterchinese/unicode.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="12.matplotlib.html" />
+    
+    
+    <link rel="prev" href="16.standrad_library.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    0 前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="01.about_python.html">
+            
+                <a href="01.about_python.html">
+            
+                    
+                    1 基础：背景介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="02.installation.html">
+            
+                <a href="02.installation.html">
+            
+                    
+                    2 基础：安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="03.first_step.html">
+            
+                <a href="03.first_step.html">
+            
+                    
+                    3 基础：初次运行
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="04.basis.html">
+            
+                <a href="04.basis.html">
+            
+                    
+                    4 基础：基本概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="05.operators_and_expressions.html">
+            
+                <a href="05.operators_and_expressions.html">
+            
+                    
+                    5 核心：运算符与表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="06.control.html">
+            
+                <a href="06.control.html">
+            
+                    
+                    6 核心：控制流
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="07.data_structures.html">
+            
+                <a href="07.data_structures.html">
+            
+                    
+                    7 核心：数据结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="08.functions.html">
+            
+                <a href="08.functions.html">
+            
+                    
+                    8 核心：函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="09.modules.html">
+            
+                <a href="09.modules.html">
+            
+                    
+                    9 核心：模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="10.io.html">
+            
+                <a href="10.io.html">
+            
+                    
+                    10 核心：输入输出
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="16.standrad_library.html">
+            
+                <a href="16.standrad_library.html">
+            
+                    
+                    11 核心：标准库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.13" data-path="11.numpy_and_scipy.html">
+            
+                <a href="11.numpy_and_scipy.html">
+            
+                    
+                    12 扩展：科学计算 numpy和scipy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="12.matplotlib.html">
+            
+                <a href="12.matplotlib.html">
+            
+                    
+                    13 扩展：绘图模块 matplotlib
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="14.advance.html">
+            
+                <a href="14.advance.html">
+            
+                    
+                    14 进阶：解决问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="15.exception.html">
+            
+                <a href="15.exception.html">
+            
+                    
+                    15 进阶：错误和异常
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="13.object_oriented_programming.html">
+            
+                <a href="13.object_oriented_programming.html">
+            
+                    
+                    16 进阶：面向对象编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="18.next.html">
+            
+                <a href="18.next.html">
+            
+                    
+                    迈出下一步
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >12 扩展：科学计算 numpy和scipy</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p><style>
+body {
+  counter-reset: h1 11;
+}
+</style></p>
+<h1 id="12-&#x6269;&#x5C55;&#xFF1A;&#x79D1;&#x5B66;&#x8BA1;&#x7B97;-numpy&#x548C;scipy">12 &#x6269;&#x5C55;&#xFF1A;&#x79D1;&#x5B66;&#x8BA1;&#x7B97; numpy&#x548C;scipy</h1>
+<p>&#x79D1;&#x5B66;&#x8BA1;&#x7B97;&#x5E38;&#x7528;&#x6A21;&#x5757;</p>
+<ul>
+<li><em>Numpy&#xFF1A;Arrays manipulation library &#x79D1;&#x5B66;&#x8BA1;&#x7B97;&#x7684;&#x5FC5;&#x88C5;&#x6A21;&#x5757;&#xFF0C;&#x51E0;&#x4E4E;&#x6240;&#x6709;&#x7684;&#x5176;&#x4ED6;&#x79D1;&#x5B66;&#x6A21;&#x5757;&#x90FD;&#x4F9D;&#x8D56;&#x4E8E;&#x5B83;</em></li>
+<li><em>Scipy&#xFF1A;&#x6269;&#x5C55;&#x7684;&#x79D1;&#x5B66;&#x8BA1;&#x7B97;&#x6A21;&#x5757;</em></li>
+<li><em>PyGSL&#xFF1A;C/C++&#x8BED;&#x8A00;&#x4E2D;&#x8457;&#x540D;&#x7684;&#x79D1;&#x5B66;&#x8BA1;&#x7B97;&#x51FD;&#x6570;&#x5E93;GNU Scientific Library(GSL)&#x7684;python&#x7248;</em></li>
+<li><em>Matplotlib&#xFF1A;&#x9AD8;&#x8D28;&#x91CF;&#x7684;2D&#x4F5C;&#x56FE;&#x6A21;&#x5757;&#xFF0C;&#x8DB3;&#x4EE5;&#x66FF;&#x4EE3;GNUPlot</em></li>
+<li><em>Mayavi&#xFF1A;&#x5F3A;&#x5927;&#x7684;&#x4E09;&#x7EF4;&#x4F5C;&#x56FE;&#x6A21;&#x5757;&#xFF0C;&#x5C5E;&#x4E8E;EPD&#x516C;&#x53F8;&#x5957;&#x4EF6;&#x7684;&#x4E00;&#x90E8;&#x5206;&#xFF08;&#x6CE8;&#x610F;&#xFF1A;&#x6B64;&#x6A21;&#x5757;&#x652F;&#x6301;Python2&#xFF0C;&#x5B98;&#x65B9;&#x672A;&#x652F;&#x6301;Python3&#xFF09;</em></li>
+<li><em>Sympy&#xFF1A;&#x7B26;&#x53F7;&#x8BA1;&#x7B97;&#x6A21;&#x5757;</em></li>
+<li><em>StatLib&#xFF1A;&#x7EDF;&#x8BA1;&#x5B66;&#x5DE5;&#x5177;&#x7BB1;</em></li>
+<li><em>Escript/Finley&#xFF1A;&#x504F;&#x5FAE;&#x5206;&#x65B9;&#x7A0B;&#x6C42;&#x89E3;</em></li>
+<li><em>Parallel Python&#xFF1A;&#x5E76;&#x884C;&#x8BA1;&#x7B97;&#x6A21;&#x5757;</em></li>
+</ul>
+<p>&#x4E0B;&#x9762;&#x6211;&#x4EEC;&#x6765;&#x8BE6;&#x7EC6;&#x4ECB;&#x7ECD;&#x5176;&#x4E2D;&#x7684;numpy&#x548C;scipy&#x6A21;&#x5757;&#x3002;</p>
+<h2 id="numpy&#x6A21;&#x5757;&#x7B80;&#x4ECB;">Numpy&#x6A21;&#x5757;&#x7B80;&#x4ECB;</h2>
+<p>Numpy&#x662F;Python&#x7684;&#x6269;&#x5C55;&#x6A21;&#x5757;&#xFF0C;&#x63D0;&#x4F9B;&#x4E86;&#x77E9;&#x9635;&#x3001;&#x7EBF;&#x6027;&#x4EE3;&#x6570;&#x3001;&#x5085;&#x91CC;&#x53F6;&#x53D8;&#x6362;&#x7B49;&#x7684;&#x89E3;&#x51B3;&#x65B9;&#x6CD5;&#x3002; NumPy&#x5305;&#x542B;&#xFF1A;N&#x7EF4;&#x77E9;&#x9635;&#x5BF9;&#x8C61;&#x3001;&#x7EBF;&#x6027;&#x4EE3;&#x6570;&#x8FD0;&#x7B97;&#x529F;&#x80FD;&#x3001;&#x5085;&#x91CC;&#x53F6;&#x53D8;&#x6362;&#x3001;Fortran&#x4EE3;&#x7801;&#x96C6;&#x6210;&#x7684;&#x5DE5;&#x5177;&#x3001;C++&#x4EE3;&#x7801;&#x96C6;&#x6210;&#x7684;&#x5DE5;&#x5177;&#x3002;</p>
+<h2 id="scipy&#x6A21;&#x5757;&#x7B80;&#x4ECB;">Scipy&#x6A21;&#x5757;&#x7B80;&#x4ECB;</h2>
+<p>SciPy&#x662F;&#x57FA;&#x4E8E;Numpy&#x6784;&#x5EFA;&#x7684;&#x4E00;&#x4E2A;&#x96C6;&#x6210;&#x4E86;&#x591A;&#x79CD;&#x6570;&#x5B66;&#x7B97;&#x6CD5;&#x548C;&#x65B9;&#x4FBF;&#x7684;&#x51FD;&#x6570;&#x7684;Python&#x6A21;&#x5757;&#x3002; SciPy&#x7684;&#x5B50;&#x6A21;&#x5757;&#x9700;&#x8981;&#x5355;&#x72EC;import&#x3002; Scipy&#x5305;&#x542B;&#xFF1A;constants&#x7269;&#x7406;&#x548C;&#x6570;&#x5B66;&#x5E38;&#x6570;&#x3001;fftpack&#x5FEB;&#x901F;&#x5085;&#x7ACB;&#x53F6;&#x53D8;&#x6362;&#x7A0B;&#x5E8F;&#x3001;integrate &#x79EF;&#x5206;&#x548C;&#x5E38;&#x5FAE;&#x5206;&#x65B9;&#x7A0B;&#x6C42;&#x89E3;&#x5668;&#x3001;interpolate&#x62DF;&#x5408;&#x548C;&#x5E73;&#x6ED1;&#x66F2;&#x7EBF;&#x3001; linalg&#x7EBF;&#x6027;&#x4EE3;&#x6570;&#x3001;optimize&#x6700;&#x4F18;&#x8DEF;&#x5F84;&#x9009;&#x62E9;&#x3001;signal&#x4FE1;&#x53F7;&#x5904;&#x7406;&#x3001;sparse&#x7A00;&#x758F;&#x77E9;&#x9635;&#x548C;&#x4EE5;&#x53CA;&#x76F8;&#x5173;&#x7A0B;&#x5E8F;&#x3001;special&#x7279;&#x6B8A;&#x51FD;&#x6570;&#x3001;stats&#x7EDF;&#x8BA1;&#x4E0A;&#x7684;&#x51FD;&#x6570;&#x548C;&#x5206;&#x5E03;&#x7B49;&#x3002;</p>
+<h2 id="numpy&#x6570;&#x7EC4;">Numpy&#x6570;&#x7EC4;</h2>
+<p>Python&#x4E2D;&#x7528;&#x5217;&#x8868;(list)&#x4FDD;&#x5B58;&#x4E00;&#x7EC4;&#x503C;&#xFF0C;&#x53EF;&#x4EE5;&#x7528;&#x6765;&#x5F53;&#x4F5C;&#x6570;&#x7EC4;&#x4F7F;&#x7528;&#xFF0C;&#x4E0D;&#x8FC7;&#x7531;&#x4E8E;&#x5217;&#x8868;&#x7684;&#x5143;&#x7D20;&#x53EF;&#x4EE5;&#x662F;&#x4EFB;&#x4F55;&#x5BF9;&#x8C61;&#xFF0C;&#x56E0;&#x6B64;&#x5217;&#x8868;&#x4E2D;&#x6240;&#x4FDD;&#x5B58;&#x7684;&#x662F;&#x5BF9;&#x8C61;&#x7684;&#x6307;&#x9488;&#x3002;&#x8FD9;&#x6837;&#x4E3A;&#x4E86;&#x4FDD;&#x5B58;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;[1,2,3]&#xFF0C;&#x9700;&#x8981;&#x6709;3&#x4E2A;&#x6307;&#x9488;&#x548C;&#x4E09;&#x4E2A;&#x6574;&#x6570;&#x5BF9;&#x8C61;&#x3002;&#x5BF9;&#x4E8E;&#x6570;&#x503C;&#x8FD0;&#x7B97;&#x6765;&#x8BF4;&#x8FD9;&#x79CD;&#x7ED3;&#x6784;&#x663E;&#x7136;&#x6BD4;&#x8F83;&#x6D6A;&#x8D39;&#x5185;&#x5B58;&#x548C;CPU&#x8BA1;&#x7B97;&#x65F6;&#x95F4;&#x3002; &#x6B64;&#x5916;Python&#x8FD8;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E2A;array&#x6A21;&#x5757;&#xFF0C;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x4FDD;&#x5B58;&#x6570;&#x503C;&#xFF0C;&#x4F46;&#x662F;&#x4E0D;&#x652F;&#x6301;&#x591A;&#x7EF4;&#xFF0C;&#x4E5F;&#x6CA1;&#x6709;&#x5404;&#x79CD;&#x8FD0;&#x7B97;&#x51FD;&#x6570;&#xFF0C;&#x56E0;&#x6B64;&#x4E5F;&#x4E0D;&#x9002;&#x5408;&#x505A;&#x6570;&#x503C;&#x8FD0;&#x7B97;&#x3002; NumPy&#x7684;&#x8BDE;&#x751F;&#x5F25;&#x8865;&#x4E86;&#x8FD9;&#x4E9B;&#x4E0D;&#x8DB3;&#xFF0C;NumPy&#x63D0;&#x4F9B;&#x4E86;&#x4E24;&#x79CD;&#x57FA;&#x672C;&#x7684;&#x5BF9;&#x8C61;&#xFF1A;ndarray(N-dimensional array object)&#x548C;ufunc(universal function object)&#x3002; ndarray(&#x4E0B;&#x6587;&#x7EDF;&#x4E00;&#x79F0;&#x4E4B;&#x4E3A;&#x6570;&#x7EC4;)&#x662F;&#x5B58;&#x50A8;&#x5355;&#x4E00;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x7684;&#x591A;&#x7EF4;&#x6570;&#x7EC4;&#xFF0C;&#x800C;ufunc&#x5219;&#x662F;&#x80FD;&#x591F;&#x5BF9;&#x6570;&#x7EC4;&#x8FDB;&#x884C;&#x5904;&#x7406;&#x7684;&#x51FD;&#x6570;&#x3002;</p>
+<h2 id="numpy&#x6570;&#x7EC4;&#x521B;&#x5EFA;">Numpy&#x6570;&#x7EC4;&#x521B;&#x5EFA;</h2>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-keyword">import</span> numpy <span class="hljs-keyword">as</span> np
+<span class="hljs-meta">&gt;&gt;&gt; </span>a = np.array([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>], dtype=<span class="hljs-string">&apos;int32&apos;</span>)
+<span class="hljs-meta">&gt;&gt;&gt; </span>a = np.array([[<span class="hljs-number">3</span>,<span class="hljs-number">4</span>,<span class="hljs-number">5</span>],[<span class="hljs-number">3</span>,<span class="hljs-number">6</span>,<span class="hljs-number">7</span>]])
+np.arange(<span class="hljs-number">0</span>,<span class="hljs-number">1</span>,<span class="hljs-number">0.1</span>) np.zeros(<span class="hljs-number">2</span>,<span class="hljs-number">3</span>) np.ones(<span class="hljs-number">5</span>)
+np.linspace(<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">12</span>) np.logspace(<span class="hljs-number">0</span>, <span class="hljs-number">2</span>, <span class="hljs-number">20</span>)
+</code></pre>
+<p><strong>&#x51FD;&#x6570;&#x5F0F;&#x521B;&#x5EFA;&#xFF1A;</strong></p>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">func</span><span class="hljs-params">(i, j)</span>:</span>
+    <span class="hljs-keyword">return</span> (i+<span class="hljs-number">1</span>) * (j+<span class="hljs-number">1</span>)
+a = np.fromfunction(func, (<span class="hljs-number">9</span>,<span class="hljs-number">9</span>))
+</code></pre>
+<h2 id="nparray-&#x4E0E;-list-&#x7684;&#x533A;&#x522B;">np.array &#x4E0E; list &#x7684;&#x533A;&#x522B;</h2>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>a=range(<span class="hljs-number">5</span>)
+<span class="hljs-meta">&gt;&gt;&gt; </span>a + <span class="hljs-number">1</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>a * <span class="hljs-number">2</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>a + a
+<span class="hljs-meta">&gt;&gt;&gt; </span>a &gt; <span class="hljs-number">3</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>np.array(a)
+
+<span class="hljs-meta">&gt;&gt;&gt; </span>b=np.arange(<span class="hljs-number">5</span>)
+<span class="hljs-meta">&gt;&gt;&gt; </span>b + <span class="hljs-number">1</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>b * <span class="hljs-number">2</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>b + b
+<span class="hljs-meta">&gt;&gt;&gt; </span>b &gt; <span class="hljs-number">3</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>b / <span class="hljs-number">2</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>list(b)
+</code></pre>
+<h2 id="&#x4E00;&#x7EF4;&#x6570;&#x7EC4;&#x53D6;&#x6837;">&#x4E00;&#x7EF4;&#x6570;&#x7EC4;&#x53D6;&#x6837;</h2>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>a = np.arange(<span class="hljs-number">10</span>)
+<span class="hljs-meta">&gt;&gt;&gt; </span>a[<span class="hljs-number">5</span>] <span class="hljs-comment"># &#x7528;&#x6574;&#x6570;&#x4F5C;&#x4E3A;&#x4E0B;&#x6807;&#x53EF;&#x4EE5;&#x83B7;&#x53D6;&#x6570;&#x7EC4;&#x4E2D;&#x7684;&#x67D0;&#x4E2A;&#x5143;&#x7D20;</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>a[<span class="hljs-number">3</span>:<span class="hljs-number">5</span>] <span class="hljs-comment"># &#x7528;&#x8303;&#x56F4;&#x4F5C;&#x4E3A;&#x4E0B;&#x6807;&#x83B7;&#x53D6;&#x6570;&#x7EC4;&#x7684;&#x4E00;&#x4E2A;&#x5207;&#x7247;&#xFF0C;&#x5305;&#x62EC;a[3]&#x4E0D;&#x5305;&#x62EC;a[5]</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>a[:<span class="hljs-number">5</span>] <span class="hljs-comment"># &#x7701;&#x7565;&#x5F00;&#x59CB;&#x4E0B;&#x6807;&#xFF0C;&#x8868;&#x793A;&#x4ECE;a[0]&#x5F00;&#x59CB;</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>a[:<span class="hljs-number">-1</span>] <span class="hljs-comment"># &#x4E0B;&#x6807;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x8D1F;&#x6570;&#xFF0C;&#x8868;&#x793A;&#x4ECE;&#x6570;&#x7EC4;&#x540E;&#x5F80;&#x524D;&#x6570;&#xFF0C;array([0, 1, 2, 3, 4, 5, 6, 7, 8])</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>a[<span class="hljs-number">2</span>:<span class="hljs-number">4</span>] = <span class="hljs-number">100</span>,<span class="hljs-number">101</span> <span class="hljs-comment"># &#x4E0B;&#x6807;&#x8FD8;&#x53EF;&#x4EE5;&#x7528;&#x6765;&#x4FEE;&#x6539;&#x5143;&#x7D20;&#x7684;&#x503C;</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>a[<span class="hljs-number">1</span>:<span class="hljs-number">-1</span>:<span class="hljs-number">2</span>] <span class="hljs-comment"># &#x8303;&#x56F4;&#x4E2D;&#x7684;&#x7B2C;&#x4E09;&#x4E2A;&#x53C2;&#x6570;&#x8868;&#x793A;&#x6B65;&#x957F;&#xFF0C; 2&#x8868;&#x793A;&#x9694;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x53D6;&#x4E00;&#x4E2A;&#x5143;&#x7D20;</span>
+</code></pre>
+<h2 id="&#x4E8C;&#x7EF4;&#x6570;&#x7EC4;&#x53D6;&#x6837;">&#x4E8C;&#x7EF4;&#x6570;&#x7EC4;&#x53D6;&#x6837;</h2>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>a = np.arange(<span class="hljs-number">10</span>).reshape(<span class="hljs-number">2</span>,<span class="hljs-number">-1</span>)
+<span class="hljs-meta">&gt;&gt;&gt; </span>a
+array([[<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>],
+       [<span class="hljs-number">5</span>, <span class="hljs-number">6</span>, <span class="hljs-number">7</span>, <span class="hljs-number">8</span>, <span class="hljs-number">9</span>]])
+<span class="hljs-meta">&gt;&gt;&gt; </span>a[<span class="hljs-number">1</span>,<span class="hljs-number">1</span>] <span class="hljs-comment">#&#x5355;&#x4E2A;&#x5143;&#x7D20;</span>
+<span class="hljs-number">6</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>a[<span class="hljs-number">1</span>] <span class="hljs-comment">#&#x6574;&#x884C;</span>
+array([<span class="hljs-number">5</span>, <span class="hljs-number">6</span>, <span class="hljs-number">7</span>, <span class="hljs-number">8</span>, <span class="hljs-number">9</span>])
+<span class="hljs-meta">&gt;&gt;&gt; </span>a[:,<span class="hljs-number">2</span>] <span class="hljs-comment">#&#x6574;&#x5217;</span>
+array([<span class="hljs-number">2</span>, <span class="hljs-number">7</span>])
+<span class="hljs-meta">&gt;&gt;&gt; </span>a[<span class="hljs-number">0</span>][::<span class="hljs-number">2</span>] <span class="hljs-comment">#&#x62BD;&#x53D6;&#x67D0;&#x884C;&#x7279;&#x5B9A;&#x5143;&#x7D20;</span>
+array([<span class="hljs-number">0</span>, <span class="hljs-number">2</span>, <span class="hljs-number">4</span>])
+</code></pre>
+<h2 id="&#x6761;&#x4EF6;&#x53D6;&#x6837;">&#x6761;&#x4EF6;&#x53D6;&#x6837;</h2>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>a = np.arange(<span class="hljs-number">10</span>).reshape(<span class="hljs-number">-1</span>,<span class="hljs-number">2</span>)
+<span class="hljs-meta">&gt;&gt;&gt; </span>a[a[:,<span class="hljs-number">1</span>]&gt;<span class="hljs-number">3</span>]
+array([[<span class="hljs-number">4</span>, <span class="hljs-number">5</span>],
+       [<span class="hljs-number">6</span>, <span class="hljs-number">7</span>],
+       [<span class="hljs-number">8</span>, <span class="hljs-number">9</span>]])
+<span class="hljs-meta">&gt;&gt;&gt; </span>a[a[:,<span class="hljs-number">1</span>]%<span class="hljs-number">3</span>==<span class="hljs-number">0</span>]
+array([[<span class="hljs-number">2</span>, <span class="hljs-number">3</span>],
+       [<span class="hljs-number">8</span>, <span class="hljs-number">9</span>]])
+<span class="hljs-meta">&gt;&gt;&gt; </span>a[(a[:,<span class="hljs-number">1</span>]&gt;<span class="hljs-number">3</span>)*(a[:,<span class="hljs-number">1</span>]%<span class="hljs-number">3</span>==<span class="hljs-number">0</span>)]
+</code></pre>
+<h2 id="&#x6570;&#x7EC4;&#x6392;&#x5E8F;">&#x6570;&#x7EC4;&#x6392;&#x5E8F;</h2>
+<p>argsort&#x51FD;&#x6570;&#x8FD4;&#x56DE;&#x6570;&#x7EC4;&#x503C;&#x4ECE;&#x5C0F;&#x5230;&#x5927;&#x7684;&#x7D22;&#x5F15;</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>x = np.array([<span class="hljs-number">3</span>,<span class="hljs-number">1</span>,<span class="hljs-number">2</span>])
+<span class="hljs-meta">&gt;&gt;&gt; </span>np.argsort(x)
+<span class="hljs-meta">&gt;&gt;&gt; </span>x[np.argsort(x)] <span class="hljs-comment"># &#x6392;&#x5E8F;&#x540E;&#x7684;&#x6570;&#x7EC4;</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>x=np.array([[<span class="hljs-number">0</span>,<span class="hljs-number">3</span>],[<span class="hljs-number">4</span>,<span class="hljs-number">2</span>]])
+<span class="hljs-meta">&gt;&gt;&gt; </span>np.argsort(x, axis=<span class="hljs-number">1</span>) <span class="hljs-comment"># &#x6392;&#x5E8F;&#x6BCF;&#x884C;</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>a[a[:,<span class="hljs-number">1</span>].argsort()] <span class="hljs-comment"># &#x6309;&#x7B2C;&#x4E8C;&#x5217;&#x6392;&#x5E8F;</span>
+</code></pre>
+<h2 id="&#x6570;&#x5B66;&#x6570;&#x7EC4;&#x65B9;&#x6CD5;">&#x6570;&#x5B66;&#x6570;&#x7EC4;&#x65B9;&#x6CD5;</h2>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>a = np.arange(<span class="hljs-number">6</span>).reshape(<span class="hljs-number">2</span>,<span class="hljs-number">3</span>)
+<span class="hljs-meta">&gt;&gt;&gt; </span>a.shape 
+(<span class="hljs-number">2</span>, <span class="hljs-number">3</span>)
+<span class="hljs-meta">&gt;&gt;&gt; </span>a.dtype 
+dtype(<span class="hljs-string">&apos;int32&apos;</span>)
+&#x5206;&#x522B;&#x8BD5;&#x8BD5;a.sum() a.min() a.max() a.mean()
+&gt;&gt; a.reshape(<span class="hljs-number">3</span>,<span class="hljs-number">2</span>) <span class="hljs-comment">#&#x8F6C;&#x7F6E;a.T</span>
+&gt;&gt; a.ravel() <span class="hljs-comment">#&#x5C55;&#x5F00;&#x6570;&#x7EC4;</span>
+&gt;&gt; a.repeat(<span class="hljs-number">2</span>,axis=<span class="hljs-number">0</span>) <span class="hljs-comment">#&#x590D;&#x5236;&#x5143;&#x7D20;</span>
+</code></pre>
+<h2 id="&#x6570;&#x7EC4;&#x5408;&#x5E76;">&#x6570;&#x7EC4;&#x5408;&#x5E76;</h2>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>a = np.array([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>])
+<span class="hljs-meta">&gt;&gt;&gt; </span>b = np.array([<span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>])
+<span class="hljs-meta">&gt;&gt;&gt; </span>np.r_[a,b]
+<span class="hljs-meta">&gt;&gt;&gt; </span>np.hstack((a,b))
+array([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>])
+<span class="hljs-meta">&gt;&gt;&gt; </span>np.vstack((a,b))
+array([[<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>],
+       [<span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>]])
+<span class="hljs-meta">&gt;&gt;&gt; </span>np.c_[a,b]
+array([[<span class="hljs-number">1</span>, <span class="hljs-number">2</span>],
+       [<span class="hljs-number">2</span>, <span class="hljs-number">3</span>],
+       [<span class="hljs-number">3</span>, <span class="hljs-number">4</span>]])
+</code></pre>
+<h2 id="&#x6570;&#x636E;&#x5B58;&#x50A8;">&#x6570;&#x636E;&#x5B58;&#x50A8;</h2>
+<p>&#x5F88;&#x591A;&#x65F6;&#x5019;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x5C06;&#x7A0B;&#x5E8F;&#x8FD0;&#x7B97;&#x5F97;&#x5230;&#x7684;&#x6570;&#x636E;&#x8FDB;&#x884C;&#x5B58;&#x50A8;&#xFF0C;Numpy&#x4E3A;&#x6211;&#x4EEC;&#x63D0;&#x4F9B;&#x4E86;&#x5B58;&#x50A8;&#x6570;&#x636E;&#x7684;&#x51FD;&#x6570;&#x3002;&#x683C;&#x5F0F;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-python">numpy.savetxt(fname, X, fmt=<span class="hljs-string">&apos;%.18e&apos;</span>,delimiter=<span class="hljs-string">&apos; &apos;</span>, newline=<span class="hljs-string">&apos;\n&apos;</span>, header=<span class="hljs-string">&apos;&apos;</span>,footer=<span class="hljs-string">&apos;&apos;</span>, comments=<span class="hljs-string">&apos;# &apos;</span>)
+
+<span class="hljs-meta">&gt;&gt;&gt; </span>x = y = z = np.arange(<span class="hljs-number">0.0</span>,<span class="hljs-number">5.0</span>,<span class="hljs-number">0.5</span>)
+<span class="hljs-meta">&gt;&gt;&gt; </span>np.savetxt(<span class="hljs-string">&apos;test.out&apos;</span>, x, delimiter=<span class="hljs-string">&apos;,&apos;</span>)
+<span class="hljs-comment"># X is an array</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>np.savetxt(<span class="hljs-string">&apos;test.out&apos;</span>, (x,y,z))
+<span class="hljs-comment"># x,y,z equal sized 1D arrays</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>np.savetxt(<span class="hljs-string">&apos;test.out&apos;</span>, x, fmt=<span class="hljs-string">&apos;%6.4f&apos;</span>)you
+<span class="hljs-comment"># use exponential notation</span>
+</code></pre>
+<h2 id="&#x6570;&#x636E;&#x8BFB;&#x53D6;">&#x6570;&#x636E;&#x8BFB;&#x53D6;</h2>
+<p>&#x65E2;&#x7136;&#x66F4;&#x591F;&#x5B58;&#x50A8;&#x6570;&#x636E;&#xFF0C;&#x90A3;&#x4E00;&#x5B9A;&#x4E5F;&#x6709;&#x8BFB;&#x53D6;&#x4E4B;&#x524D;&#x5DF2;&#x7ECF;&#x5B58;&#x50A8;&#x7684;&#x6570;&#x636E;&#x7684;&#x65B9;&#x6CD5;&#x3002;&#x51FD;&#x6570;&#x7684;&#x683C;&#x5F0F;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-python">numpy.loadtxt(fname, dtype=&lt;type <span class="hljs-string">&apos;float&apos;</span>&gt;,comments=<span class="hljs-string">&apos;#&apos;</span>, delimiter=<span class="hljs-keyword">None</span>,converters=<span class="hljs-keyword">None</span>, skiprows=<span class="hljs-number">0</span>, usecols=<span class="hljs-keyword">None</span>,unpack=<span class="hljs-keyword">False</span>, ndmin=<span class="hljs-number">0</span>)
+
+&#x8BA9;&#x6211;&#x4EEC;&#x6765;&#x8BFB;&#x53D6;&#x521A;&#x624D;&#x5DF2;&#x7ECF;&#x5B58;&#x50A8;&#x7684;&#x6570;&#x636E;
+<span class="hljs-meta">&gt;&gt;&gt; </span>data = np.loadtxt(<span class="hljs-string">&apos;test.out&apos;</span>, dtype = float)
+<span class="hljs-meta">&gt;&gt;&gt; </span>data = np.loadtxt(<span class="hljs-string">&apos;test.out&apos;</span>, usecols=[<span class="hljs-number">1</span>])
+</code></pre>
+<h2 id="&#x548C;math&#x51FD;&#x6570;&#x6BD4;&#x8F83;">&#x548C;math&#x51FD;&#x6570;&#x6BD4;&#x8F83;</h2>
+<p>Python&#x672C;&#x8EAB;&#x5176;&#x5B9E;&#x81EA;&#x5E26;math&#x5E93;&#x4EE5;&#x7528;&#x4E8E;&#x4E00;&#x822C;&#x7684;&#x6570;&#x5B66;&#x8BA1;&#x7B97;&#xFF0C;Numpy&#x4E2D;&#x7684;&#x51FD;&#x6570;&#x662F;&#x9488;&#x5BF9;&#x6570;&#x7EC4;&#x8BBE;&#x8BA1;&#x7684;&#xFF0C;&#x4E14;&#x66F4;&#x4E3A;&#x5FEB;&#x901F;&#x548C;&#x5F3A;&#x5927;&#xFF0C;&#x8FD9;&#x91CC;&#x6211;&#x4EEC;&#x6765;&#x5F04;&#x6E05;&#x695A;&#x4E8C;&#x8005;&#x7684;&#x5177;&#x4F53;&#x533A;&#x522B;&#x3002;</p>
+<pre><code class="lang-python"><span class="hljs-keyword">import</span> time, math
+<span class="hljs-keyword">import</span> numpy <span class="hljs-keyword">as</span> np
+n = <span class="hljs-number">1e+6</span>
+x = range(int(n))
+start = time.clock()
+<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> x:
+    tmp = math.sin(i/n)
+print(<span class="hljs-string">&quot;math.sin:&quot;</span>, time.clock() - start)
+x = np.array(x)/n
+start = time.clock()
+np.sin(x)
+print(<span class="hljs-string">&quot;numpy.sin:&quot;</span>, time.clock() - start)
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="16.standrad_library.html" class="navigation navigation-prev " aria-label="Previous page: 11 核心：标准库">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="12.matplotlib.html" class="navigation navigation-next " aria-label="Next page: 13 扩展：绘图模块 matplotlib">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"12 扩展：科学计算 numpy和scipy","level":"1.13","depth":1,"next":{"title":"13 扩展：绘图模块 matplotlib","level":"1.14","depth":1,"path":"12.matplotlib.md","ref":"12.matplotlib.md","articles":[]},"previous":{"title":"11 核心：标准库","level":"1.12","depth":1,"path":"16.standrad_library.md","ref":"16.standrad_library.md","articles":[]},"dir":"ltr"},"config":{"plugins":["numbered-headings","betterchinese","-search","search-pro"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"search-pro":{"cutWordLib":"nodejieba","defineWord":["Gitbook Use"]},"numbered-headings":{},"betterchinese":{},"highlight":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"","pdf":{"pageNumbers":true,"fontSize":14,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"简明Python教程-BNU版","language":"zh-hans","gitbook":"*","description":"北师大天文系Pythonj讲义"},"file":{"path":"11.numpy_and_scipy.md","mtime":"2018-10-08T01:51:49.844Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-02-17T06:48:59.306Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

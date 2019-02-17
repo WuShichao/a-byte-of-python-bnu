@@ -1,0 +1,746 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>13 扩展：绘图模块 matplotlib · 简明Python教程-BNU版</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-betterchinese/unicode.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="14.advance.html" />
+    
+    
+    <link rel="prev" href="11.numpy_and_scipy.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    0 前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="01.about_python.html">
+            
+                <a href="01.about_python.html">
+            
+                    
+                    1 基础：背景介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="02.installation.html">
+            
+                <a href="02.installation.html">
+            
+                    
+                    2 基础：安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="03.first_step.html">
+            
+                <a href="03.first_step.html">
+            
+                    
+                    3 基础：初次运行
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="04.basis.html">
+            
+                <a href="04.basis.html">
+            
+                    
+                    4 基础：基本概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="05.operators_and_expressions.html">
+            
+                <a href="05.operators_and_expressions.html">
+            
+                    
+                    5 核心：运算符与表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="06.control.html">
+            
+                <a href="06.control.html">
+            
+                    
+                    6 核心：控制流
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="07.data_structures.html">
+            
+                <a href="07.data_structures.html">
+            
+                    
+                    7 核心：数据结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="08.functions.html">
+            
+                <a href="08.functions.html">
+            
+                    
+                    8 核心：函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="09.modules.html">
+            
+                <a href="09.modules.html">
+            
+                    
+                    9 核心：模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="10.io.html">
+            
+                <a href="10.io.html">
+            
+                    
+                    10 核心：输入输出
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="16.standrad_library.html">
+            
+                <a href="16.standrad_library.html">
+            
+                    
+                    11 核心：标准库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="11.numpy_and_scipy.html">
+            
+                <a href="11.numpy_and_scipy.html">
+            
+                    
+                    12 扩展：科学计算 numpy和scipy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.14" data-path="12.matplotlib.html">
+            
+                <a href="12.matplotlib.html">
+            
+                    
+                    13 扩展：绘图模块 matplotlib
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="14.advance.html">
+            
+                <a href="14.advance.html">
+            
+                    
+                    14 进阶：解决问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="15.exception.html">
+            
+                <a href="15.exception.html">
+            
+                    
+                    15 进阶：错误和异常
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="13.object_oriented_programming.html">
+            
+                <a href="13.object_oriented_programming.html">
+            
+                    
+                    16 进阶：面向对象编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="18.next.html">
+            
+                <a href="18.next.html">
+            
+                    
+                    迈出下一步
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >13 扩展：绘图模块 matplotlib</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p><style>
+body {
+  counter-reset: h1 12;
+}
+</style></p>
+<h1 id="13-&#x6269;&#x5C55;&#xFF1A;&#x7ED8;&#x56FE;&#x6A21;&#x5757;-matplotlib">13 &#x6269;&#x5C55;&#xFF1A;&#x7ED8;&#x56FE;&#x6A21;&#x5757; matplotlib</h1>
+<h2 id="&#x56FE;&#x5F62;&#x76F8;&#x5173;&#x6A21;&#x5757;">&#x56FE;&#x5F62;&#x76F8;&#x5173;&#x6A21;&#x5757;</h2>
+<p>Matplotlib&#xFF1A;&#x57FA;&#x4E8E;&#x6570;&#x503C;&#x8BA1;&#x7B97;&#x6A21;&#x5757;Numeric&#x53CA;Numarray&#xFF0C;&#x514B;&#x9686;&#x4E86;&#x8BB8;&#x591A;Matlab&#x4E2D;&#x7684;&#x51FD;&#x6570;&#xFF0C;&#x5E2E;&#x52A9;&#x7528;&#x6237;&#x8F7B;&#x677E;&#x5730;&#x83B7;&#x5F97;&#x9AD8;&#x8D28;&#x91CF;&#x7684;&#x4E8C;&#x7EF4;&#x56FE;&#x5F62;&#x3002; PIL(Python Imaging Library)&#xFF1A;&#x652F;&#x6301;&#x5404;&#x79CD;&#x56FE;&#x7247;&#x6587;&#x4EF6;&#x683C;&#x5F0F;&#xFF0C;&#x80FD;&#x8FDB;&#x884C;&#x56FE;&#x5F62;&#x683C;&#x5F0F;&#x7684;&#x8F6C;&#x6362;&#x3001;&#x663E;&#x793A;&#xFF0C;&#x4EE5;&#x53CA;&#x56FE;&#x5F62;&#x7684;&#x653E;&#x5927;&#x3001;&#x7F29;&#x5C0F;&#x548C;&#x65CB;&#x8F6C;&#x7B49;&#x5904;&#x7406;&#x3002; Visual&#xFF1A;&#x662F;Python&#x7684;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x6613;&#x7528;&#x7684;3D&#x56FE;&#x5F62;&#x5E93;&#xFF0C;&#x4F7F;&#x7528;&#x5B83;&#x53EF;&#x4EE5;&#x5FEB;&#x901F;&#x521B;&#x5EFA;3D&#x573A;&#x666F;&#x3001;&#x52A8;&#x753B;&#x3002;</p>
+<p>&#x4E0B;&#x9762;&#x6211;&#x4EEC;&#x6765;&#x901A;&#x8FC7;&#x5B9E;&#x9645;&#x7684;&#x4F8B;&#x5B50;&#x6765;&#x5B66;&#x4E60;matplotlib&#x7ED8;&#x56FE;&#x6A21;&#x5757;&#x3002;</p>
+<p>&#x8303;&#x4F8B;&#xFF1A;&#x7ED8;&#x5236;&#x51FD;&#x6570;</p>
+<pre><code class="lang-python"><span class="hljs-keyword">import</span> numpy <span class="hljs-keyword">as</span> np
+<span class="hljs-keyword">import</span> matplotlib.pyplot <span class="hljs-keyword">as</span> plt
+
+x = np.linspace(<span class="hljs-number">0</span>, <span class="hljs-number">10</span>, <span class="hljs-number">1000</span>)
+y = np.sin(x) ; z = np.cos(x**<span class="hljs-number">2</span>)
+plt.figure()
+plt.plot(x,y,label=<span class="hljs-string">&quot;$sin(x)$&quot;</span>,color=<span class="hljs-string">&quot;red&quot;</span>,linewidth=<span class="hljs-number">2</span>)
+plt.plot(x,z,<span class="hljs-string">&quot;b--&quot;</span>,label=<span class="hljs-string">&quot;$cos(x^2)$&quot;</span>)
+plt.legend(loc=<span class="hljs-number">3</span>)
+plt.show() <span class="hljs-comment">#&#x4FDD;&#x5B58;&#x56FE;&#x50CF;&#x53EF;&#x7528; plt.savefig(&apos;fig.jpg&apos;)</span>
+plt.close()
+</code></pre>
+<p>&#x7A0B;&#x5E8F;&#x8FD0;&#x884C;&#x7ED3;&#x679C;&#x5982;&#x4E0B;&#xFF1A;</p>
+<p><img src=".gitbook/assets/figure_1.png" alt=""></p>
+<h3 id="plot&#x53C2;&#x6570;">Plot&#x53C2;&#x6570;</h3>
+<pre><code class="lang-python">&#x2022; alpha : float
+&#x2022; color <span class="hljs-keyword">or</span> c : any matplotlib color
+&#x2022; label : any string , &#x56FE;&#x6CE8;&#x540D;&#x79F0;
+&#x2022; linestyle <span class="hljs-keyword">or</span> ls : [ <span class="hljs-string">&apos;-&apos;</span> | <span class="hljs-string">&apos;--&apos;</span> | <span class="hljs-string">&apos;-.&apos;</span> | <span class="hljs-string">&apos;:&apos;</span> | <span class="hljs-string">&apos;steps&apos;</span> | ...]
+&#x2022; linewidth <span class="hljs-keyword">or</span> lw: float value (points, <span class="hljs-number">0.3527</span>mm )
+&#x2022; marker [ <span class="hljs-string">&apos;+&apos;</span> | <span class="hljs-string">&apos;,&apos;</span> | <span class="hljs-string">&apos;.&apos;</span> | <span class="hljs-string">&apos;1&apos;</span> | <span class="hljs-string">&apos;2&apos;</span> | <span class="hljs-string">&apos;3&apos;</span> | <span class="hljs-string">&apos;4&apos;</span> ]
+&#x2022; markersize <span class="hljs-keyword">or</span> ms : float
+&#x2022; zorder: any number &#x53E0;&#x653E;&#x987A;&#x5E8F;
+</code></pre>
+<h3 id="&#x989C;&#x8272;">&#x989C;&#x8272;</h3>
+<p><img src=".gitbook/assets/figure_2.png" alt=""></p>
+<pre><code class="lang-python">&#x2022; &#x84DD;&#x8272;&#xFF1A; <span class="hljs-string">&apos;b&apos;</span> (blue)
+&#x2022; &#x7EFF;&#x8272;&#xFF1A; <span class="hljs-string">&apos;g&apos;</span> (green)
+&#x2022; &#x7EA2;&#x8272;&#xFF1A; <span class="hljs-string">&apos;r&apos;</span> (red)
+&#x2022; &#x9752;&#x8272;&#xFF1A; <span class="hljs-string">&apos;c&apos;</span> (cyan)
+&#x2022; &#x6D0B;&#x7EA2;&#xFF1A; <span class="hljs-string">&apos;m&apos;</span> (magenta)
+&#x2022; &#x9EC4;&#x8272;&#xFF1A; <span class="hljs-string">&apos;y&apos;</span> (yellow)
+&#x2022; &#x9ED1;&#x8272;&#xFF1A; <span class="hljs-string">&apos;k&apos;</span> (black)
+&#x2022; &#x767D;&#x8272;&#xFF1A; <span class="hljs-string">&apos;w&apos;</span> (white)
+
+&#x2022; &#x7070;&#x5EA6;&#x8868;&#x793A;&#xFF1A; e.g. <span class="hljs-number">0.75</span> ([<span class="hljs-number">0</span>,<span class="hljs-number">1</span>]&#x5185;&#x4EFB;&#x610F;&#x6D6E;&#x70B9;&#x6570;)
+&#x2022; RGB&#x8868;&#x793A;&#x6CD5;&#xFF1A; &#x7531;&#x7EA2;&#x8272;&#x3001;&#x7EFF;&#x8272;&#x548C;&#x84DD;&#x8272;&#x7684;&#x503C;&#x7EC4;&#x6210;&#x7684;&#x5341;&#x516D;&#x8FDB;&#x5236;&#x7B26;&#x53F7;&#x6765;&#x5B9A;&#x4E49; e.g. <span class="hljs-string">&apos;#2F4F4F&apos;</span> &#x6216; (<span class="hljs-number">0.18</span>,<span class="hljs-number">0.31</span>,<span class="hljs-number">0.31</span>)
+</code></pre>
+<h3 id="&#x5750;&#x6807;&#x8F74;&#x5B9A;&#x5236;">&#x5750;&#x6807;&#x8F74;&#x5B9A;&#x5236;</h3>
+<pre><code class="lang-python">&#x2022; plt.title(<span class="hljs-string">&apos;sine function demo&apos;</span>)
+&#x2022; plt.xlabel(<span class="hljs-string">&apos;time(s)&apos;</span>)
+&#x2022; plt.ylabel(<span class="hljs-string">&apos;votage(mV)&apos;</span>)
+&#x2022; plt.xlim([<span class="hljs-number">0.0</span>,<span class="hljs-number">5.0</span>])
+&#x2022; plt.ylim([<span class="hljs-number">-1.2</span>,<span class="hljs-number">1.2</span>])
+&#x2022; plt.hold(<span class="hljs-string">&apos;on&apos;</span>) <span class="hljs-comment"># &#x4FDD;&#x6301;&#x4E4B;&#x524D;plot&#x7684;&#x7ED3;&#x679C;</span>
+&#x2022; plt.grid(<span class="hljs-string">&apos;on&apos;</span>) <span class="hljs-comment"># &#x6DFB;&#x52A0;&#x7F51;&#x683C;</span>
+&#x2022; plt.text(<span class="hljs-number">4</span>,<span class="hljs-number">0</span>,<span class="hljs-string">&apos;$\mu=100$&apos;</span>) <span class="hljs-comment"># &#x6587;&#x672C;</span>
+&#x2022; plt.axis(<span class="hljs-string">&apos;equal&apos;</span>) <span class="hljs-comment"># &#x7B49;&#x6BD4;&#x4F8B;&#x5750;&#x6807;&#x8F74;</span>
+&#x2022; plt.ylim(plt.ylim()[::<span class="hljs-number">-1</span>]) <span class="hljs-comment"># &#x7FFB;&#x8F6C;Y&#x8F74;</span>
+&#x2022; plt.gca().invert_yaxis() <span class="hljs-comment"># &#x7FFB;&#x8F6C;Y&#x8F74;</span>
+</code></pre>
+<h3 id="&#x6781;&#x5750;&#x6807;">&#x6781;&#x5750;&#x6807;</h3>
+<pre><code class="lang-python"><span class="hljs-keyword">import</span> numpy <span class="hljs-keyword">as</span> np
+<span class="hljs-keyword">import</span> matplotlib.pyplot <span class="hljs-keyword">as</span> plt
+
+r = np.arange(<span class="hljs-number">0</span>, <span class="hljs-number">3.0</span>, <span class="hljs-number">0.01</span>)
+theta = <span class="hljs-number">2</span> * np.pi * r
+ax = plt.subplot(<span class="hljs-number">111</span>, polar=<span class="hljs-keyword">True</span>)
+ax.plot(theta, r, color=<span class="hljs-string">&apos;r&apos;</span>, linewidth=<span class="hljs-number">3</span>)
+ax.set_rmax(<span class="hljs-number">2.0</span>)
+ax.grid(<span class="hljs-keyword">True</span>)
+ax.set_title(<span class="hljs-string">&quot;polar plot&quot;</span>)
+plt.show()
+</code></pre>
+<p>&#x7A0B;&#x5E8F;&#x8FD0;&#x884C;&#x7ED3;&#x679C;&#x5982;&#x4E0B;&#xFF1A;</p>
+<p><img src=".gitbook/assets/figure_3.png" alt=""></p>
+<h3 id="&#x56FE;&#x8868;&#x7C7B;&#x578B;">&#x56FE;&#x8868;&#x7C7B;&#x578B;</h3>
+<p>matplotlib&#x6A21;&#x5757;&#x652F;&#x6301;&#x7684;&#x56FE;&#x8868;&#x7C7B;&#x578B;&#x975E;&#x5E38;&#x4E4B;&#x591A;&#xFF0C;&#x51E0;&#x4E4E;&#x80FD;&#x80DC;&#x4EFB;&#x4EFB;&#x4F55;&#x7ED8;&#x56FE;&#x4EFB;&#x52A1;&#x3002;&#x4F46;&#x5BF9;&#x4E8E;&#x7279;&#x5B9A;&#x6570;&#x636E;&#xFF0C;&#x9009;&#x53D6;&#x5408;&#x9002;&#x7684;&#x56FE;&#x8868;&#x7C7B;&#x578B;&#x6765;&#x8868;&#x8FBE;&#x6570;&#x636E;&#x7684;&#x5185;&#x6DB5;&#x975E;&#x5E38;&#x91CD;&#x8981;&#x3002;&#x4E3A;&#x4E86;&#x65B9;&#x4FBF;&#x79D1;&#x5B66;&#x8BA1;&#x7B97;&#x548C;&#x6570;&#x636E;&#x5206;&#x6790;&#x7684;&#x521D;&#x5B66;&#x8005;&#xFF0C;&#x6211;&#x4EEC;&#x8FD9;&#x91CC;&#x7ED9;&#x51FA;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x793A;&#x610F;&#x56FE;&#x6765;&#x544A;&#x8BC9;&#x5927;&#x5BB6;&#x5982;&#x4F55;&#x9009;&#x53D6;&#x5408;&#x9002;&#x7684;&#x56FE;&#x8868;&#x7C7B;&#x578B;&#x3002;</p>
+<p><img src=".gitbook/assets/figure_4.png" alt=""></p>
+<h3 id="&#x76F4;&#x65B9;&#x56FE;">&#x76F4;&#x65B9;&#x56FE;</h3>
+<pre><code class="lang-python"><span class="hljs-keyword">import</span> numpy <span class="hljs-keyword">as</span> np
+<span class="hljs-keyword">import</span> matplotlib.mlab <span class="hljs-keyword">as</span> mlab
+<span class="hljs-keyword">import</span> matplotlib.pyplot <span class="hljs-keyword">as</span> plt
+
+mu = <span class="hljs-number">100</span> <span class="hljs-comment"># mean of distribution</span>
+sigma = <span class="hljs-number">15</span> <span class="hljs-comment"># standard deviation of distribution</span>
+x = mu + sigma * np.random.randn(<span class="hljs-number">10000</span>)
+num_bins = <span class="hljs-number">50</span>
+<span class="hljs-comment"># the histogram of the data</span>
+n, bins, patches = plt.hist(x, num_bins, normed=<span class="hljs-number">1</span>,
+facecolor=<span class="hljs-string">&apos;green&apos;</span>, alpha=<span class="hljs-number">0.5</span>)
+y = mlab.normpdf(bins, mu, sigma) <span class="hljs-comment"># add a &apos;best fit&apos; line</span>
+plt.plot(bins, y, <span class="hljs-string">&apos;r--&apos;</span>)
+plt.show()
+</code></pre>
+<p>&#x7A0B;&#x5E8F;&#x8FD0;&#x884C;&#x7ED3;&#x679C;&#x5982;&#x4E0B;&#xFF1A;</p>
+<p><img src=".gitbook/assets/figure_5.png" alt=""></p>
+<h3 id="&#x6563;&#x70B9;&#x56FE;">&#x6563;&#x70B9;&#x56FE;</h3>
+<pre><code class="lang-python"><span class="hljs-keyword">import</span> matplotlib.pyplot <span class="hljs-keyword">as</span> plt
+<span class="hljs-keyword">import</span> numpy <span class="hljs-keyword">as</span> np
+
+n = <span class="hljs-number">150</span>
+x = np.random.rand(n,<span class="hljs-number">3</span>)
+c = np.random.rand(n,<span class="hljs-number">3</span>)
+plt.scatter(x[:,<span class="hljs-number">0</span>], x[:,<span class="hljs-number">1</span>], s=x[:,<span class="hljs-number">2</span>]*<span class="hljs-number">500</span>, alpha=<span class="hljs-number">0.5</span>, color=c)
+plt.show()
+</code></pre>
+<p>&#x7A0B;&#x5E8F;&#x8FD0;&#x884C;&#x7ED3;&#x679C;&#x5982;&#x4E0B;&#xFF1A;</p>
+<p><img src=".gitbook/assets/figure_6.png" alt=""></p>
+<h3 id="&#x67F1;&#x72B6;&#x56FE;">&#x67F1;&#x72B6;&#x56FE;</h3>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> matplotlib.ticker <span class="hljs-keyword">import</span> FuncFormatter
+<span class="hljs-keyword">import</span> matplotlib.pyplot <span class="hljs-keyword">as</span> plt
+<span class="hljs-keyword">import</span> numpy <span class="hljs-keyword">as</span> np
+
+x = np.arange(<span class="hljs-number">4</span>)
+money = [<span class="hljs-number">1.5e5</span>, <span class="hljs-number">2.5e6</span>, <span class="hljs-number">5.5e6</span>, <span class="hljs-number">2.0e7</span>]
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">millions</span><span class="hljs-params">(x, pos)</span>:</span>
+    <span class="hljs-string">&apos;The two args are the value and tick position&apos;</span>
+    <span class="hljs-keyword">return</span> <span class="hljs-string">&apos;$%1.1fM&apos;</span> % (x * <span class="hljs-number">1e-6</span>)
+
+formatter = FuncFormatter(millions)
+
+fig, ax = plt.subplots()
+ax.yaxis.set_major_formatter(formatter)
+plt.bar(x, money)
+plt.xticks(x, (<span class="hljs-string">&apos;Bill&apos;</span>, <span class="hljs-string">&apos;Fred&apos;</span>, <span class="hljs-string">&apos;Mary&apos;</span>, <span class="hljs-string">&apos;Sue&apos;</span>))
+plt.show()
+</code></pre>
+<p>&#x7A0B;&#x5E8F;&#x8FD0;&#x884C;&#x7ED3;&#x679C;&#x5982;&#x4E0B;&#xFF1A;</p>
+<p><img src=".gitbook/assets/figure_7.png" alt=""></p>
+<h3 id="&#x591A;&#x5B50;&#x56FE;">&#x591A;&#x5B50;&#x56FE;</h3>
+<pre><code class="lang-python">&#x2022; subplot(numRows, numCols, plotNum)
+&#x2013; plt.subplot(<span class="hljs-number">221</span>) <span class="hljs-comment"># &#x7B2C;&#x4E00;&#x884C;&#x7684;&#x5DE6;&#x56FE;</span>
+&#x2013; plt.subplot(<span class="hljs-number">222</span>) <span class="hljs-comment"># &#x7B2C;&#x4E00;&#x884C;&#x7684;&#x53F3;&#x56FE;</span>
+&#x2013; plt.subplot(<span class="hljs-number">212</span>) <span class="hljs-comment"># &#x7B2C;&#x4E8C;&#x6574;&#x884C;</span>
+&#x2013; plt.show()
+&#x2013; ax1 = plt.subplot(<span class="hljs-number">211</span>) <span class="hljs-comment"># &#x521B;&#x5EFA;&#x5B50;&#x56FE;1</span>
+&#x2013; ax1.plot(x,y)
+&#x2013; ax2 = plt.subplot(<span class="hljs-number">212</span>) <span class="hljs-comment"># &#x521B;&#x5EFA;&#x5B50;&#x56FE;2</span>
+&#x2013; ax2.plot(x,y)
+</code></pre>
+<h3 id="colormap">colormap</h3>
+<p><img src=".gitbook/assets/figure_8.png" alt=""></p>
+<pre><code class="lang-python">&#x2022; &#x67E5;&#x770B;&#x53EF;&#x7528;&#x8272;&#x8868;
+<span class="hljs-keyword">import</span> pylab <span class="hljs-keyword">as</span> pl
+pl.colormaps()
+&#x2022; &#x67E5;&#x770B;&#x8272;&#x8868;&#x5185;&#x5BB9;
+pl.cm.hot(<span class="hljs-number">0.001</span>)
+pl.cm.hot(<span class="hljs-number">0.999</span>)
+pl.cm.hot(<span class="hljs-number">0.5</span>)
+pl.cm.hot(<span class="hljs-number">0.5</span>, <span class="hljs-number">0.5</span>)
+</code></pre>
+<h3 id="&#x4E09;&#x7EF4;&#x4F5C;&#x56FE;">&#x4E09;&#x7EF4;&#x4F5C;&#x56FE;</h3>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> matplotlib <span class="hljs-keyword">import</span> pyplot <span class="hljs-keyword">as</span> plt
+<span class="hljs-keyword">from</span> mpl_toolkits.mplot3d <span class="hljs-keyword">import</span> Axes3D
+<span class="hljs-keyword">import</span> numpy <span class="hljs-keyword">as</span> np
+
+fig = plt.figure()
+ax = Axes3D(fig)
+data = np.random.random([<span class="hljs-number">100</span>,<span class="hljs-number">3</span>])
+np.random.shuffle(data)
+ax.scatter(data[:,<span class="hljs-number">0</span>],data[:,<span class="hljs-number">1</span>],data[:,<span class="hljs-number">2</span>], marker=<span class="hljs-string">&apos;o&apos;</span>)
+plt.show()
+</code></pre>
+<p>&#x7A0B;&#x5E8F;&#x8FD0;&#x884C;&#x7ED3;&#x679C;&#x5982;&#x4E0B;&#xFF1A;</p>
+<p><img src=".gitbook/assets/figure_9.png" alt=""></p>
+<h3 id="&#x4E09;&#x7EF4;&#x66F2;&#x9762;">&#x4E09;&#x7EF4;&#x66F2;&#x9762;</h3>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> mpl_toolkits.mplot3d <span class="hljs-keyword">import</span> Axes3D
+<span class="hljs-keyword">import</span> matplotlib.pyplot <span class="hljs-keyword">as</span> plt
+<span class="hljs-keyword">import</span> numpy <span class="hljs-keyword">as</span> np
+
+cmap = plt.cm.jet
+fig = plt.figure()
+ax = fig.gca(projection=<span class="hljs-string">&apos;3d&apos;</span>)
+X = np.arange(<span class="hljs-number">-5</span>, <span class="hljs-number">5</span>, <span class="hljs-number">0.25</span>)
+Y = np.arange(<span class="hljs-number">-5</span>, <span class="hljs-number">5</span>, <span class="hljs-number">0.25</span>)
+X, Y = np.meshgrid(X, Y)
+Z = np.sin(np.sqrt(X**<span class="hljs-number">2</span> + Y**<span class="hljs-number">2</span>))
+ax.plot_surface(X, Y, Z, rstride=<span class="hljs-number">1</span>, cstride=<span class="hljs-number">1</span>, cmap=cmap )
+ax.set_zlim(<span class="hljs-number">-1.01</span>, <span class="hljs-number">1.01</span>)
+plt.show()
+</code></pre>
+<p>&#x7A0B;&#x5E8F;&#x8FD0;&#x884C;&#x7ED3;&#x679C;&#x5982;&#x4E0B;&#xFF1A;</p>
+<p><img src=".gitbook/assets/figure_10.png" alt=""></p>
+<h3 id="&#x7B49;&#x9AD8;&#x7EBF;&#x56FE;">&#x7B49;&#x9AD8;&#x7EBF;&#x56FE;</h3>
+<pre><code class="lang-python"><span class="hljs-keyword">import</span> matplotlib.pyplot <span class="hljs-keyword">as</span> plt
+<span class="hljs-keyword">import</span> numpy <span class="hljs-keyword">as</span> np
+
+plt.figure()
+X = np.arange(<span class="hljs-number">-5</span>, <span class="hljs-number">5</span>, <span class="hljs-number">0.25</span>)
+Y = np.arange(<span class="hljs-number">-5</span>, <span class="hljs-number">5</span>, <span class="hljs-number">0.25</span>)
+X, Y = np.meshgrid(X, Y)
+Z = np.sin(np.sqrt(X**<span class="hljs-number">2</span> + Y**<span class="hljs-number">2</span>))
+levels = np.arange(<span class="hljs-number">-1</span>,<span class="hljs-number">1</span>,<span class="hljs-number">0.25</span>)
+cs = plt.contour(X, Y, Z, levels)
+plt.clabel(cs,inline=<span class="hljs-number">1</span>,fontsize=<span class="hljs-number">8</span>)
+plt.axis(<span class="hljs-string">&apos;equal&apos;</span>)
+plt.show()
+</code></pre>
+<p>&#x7A0B;&#x5E8F;&#x8FD0;&#x884C;&#x7ED3;&#x679C;&#x5982;&#x4E0B;&#xFF1A;</p>
+<p><img src=".gitbook/assets/figure_11.png" alt=""></p>
+<h3 id="&#x4E09;&#x7EF4;&#x6295;&#x5F71;">&#x4E09;&#x7EF4;&#x6295;&#x5F71;</h3>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> mpl_toolkits.mplot3d <span class="hljs-keyword">import</span> axes3d
+<span class="hljs-keyword">import</span> matplotlib.pyplot <span class="hljs-keyword">as</span> plt
+<span class="hljs-keyword">from</span> matplotlib <span class="hljs-keyword">import</span> cm
+
+fig = plt.figure()
+ax = fig.gca(projection=<span class="hljs-string">&apos;3d&apos;</span>)
+X, Y, Z = axes3d.get_test_data(<span class="hljs-number">0.1</span>)
+ax.plot_surface(X, Y, Z, rstride=<span class="hljs-number">8</span>,cstride=<span class="hljs-number">8</span>, alpha=<span class="hljs-number">0.3</span>)
+cset = ax.contour(X, Y, Z, zdir=<span class="hljs-string">&apos;z&apos;</span>, offset=<span class="hljs-number">-100</span>)
+cset = ax.contour(X, Y, Z, zdir=<span class="hljs-string">&apos;x&apos;</span>, offset=<span class="hljs-number">-40</span>)
+cset = ax.contour(X, Y, Z, zdir=<span class="hljs-string">&apos;y&apos;</span>, offset=<span class="hljs-number">40</span>)
+plt.show()
+</code></pre>
+<p>&#x7A0B;&#x5E8F;&#x8FD0;&#x884C;&#x7ED3;&#x679C;&#x5982;&#x4E0B;&#xFF1A;</p>
+<p><img src=".gitbook/assets/figure_12.png" alt=""></p>
+<h3 id="mplot3d-&#x51FD;&#x6570;">mplot3d &#x51FD;&#x6570;</h3>
+<pre><code class="lang-python">&#x2022; plot3D&#xFF1A;&#x4E09;&#x7EF4;&#x63A7;&#x4EF6;&#x7ED8;&#x56FE;
+&#x2022; plot_surface&#xFF1A; &#x4E09;&#x7EF4;&#x7F51;&#x683C;&#x66F2;&#x9762;
+&#x2022; plot_trisurf&#xFF1A; &#x4E09;&#x7EF4;&#x4E09;&#x89D2;&#x66F2;&#x9762;
+&#x2022; plot_wireframe&#xFF1A;&#x4E09;&#x7EF4;&#x7EBF;&#x56FE;
+&#x2022; quiver&#xFF1A; &#x77E2;&#x91CF;&#x56FE;
+&#x2022; quiver3D&#xFF1A; &#x4E09;&#x7EF4;&#x77E2;&#x91CF;&#x56FE;
+&#x2022; scatter: &#x6563;&#x70B9;&#x56FE;
+</code></pre>
+<h3 id="&#x4E09;&#x7EF4;&#x7403;&#x9762;">&#x4E09;&#x7EF4;&#x7403;&#x9762;</h3>
+<p>&#x65B9;&#x6CD5;&#x4E00;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> mpl_toolkits.mplot3d <span class="hljs-keyword">import</span> Axes3D
+<span class="hljs-keyword">import</span> matplotlib.pyplot <span class="hljs-keyword">as</span> plt
+<span class="hljs-keyword">import</span> numpy <span class="hljs-keyword">as</span> np
+
+fig = plt.figure()
+ax = fig.add_subplot(<span class="hljs-number">111</span>, projection=<span class="hljs-string">&apos;3d&apos;</span>)
+u = np.linspace(<span class="hljs-number">0</span>, <span class="hljs-number">2</span> * np.pi, <span class="hljs-number">100</span>)
+v = np.linspace(<span class="hljs-number">0</span>, np.pi, <span class="hljs-number">100</span>)
+x = <span class="hljs-number">10</span> * np.outer(np.cos(u), np.sin(v))
+y = <span class="hljs-number">10</span> * np.outer(np.sin(u), np.sin(v))
+z = <span class="hljs-number">10</span> * np.outer(np.ones(np.size(u)), np.cos(v))
+ax.plot_surface(x, y, z, rstride=<span class="hljs-number">4</span>, cstride=<span class="hljs-number">4</span>, color=<span class="hljs-string">&apos;b&apos;</span>)
+plt.show()
+</code></pre>
+<p>&#x7A0B;&#x5E8F;&#x8FD0;&#x884C;&#x7ED3;&#x679C;&#x5982;&#x4E0B;&#xFF1A;</p>
+<p><img src=".gitbook/assets/figure_13.png" alt=""></p>
+<p>&#x65B9;&#x6CD5;&#x4E8C;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> mpl_toolkits.mplot3d <span class="hljs-keyword">import</span> Axes3D
+<span class="hljs-keyword">import</span> matplotlib.pyplot <span class="hljs-keyword">as</span> plt
+<span class="hljs-keyword">import</span> numpy <span class="hljs-keyword">as</span> np
+
+fig = plt.figure()
+ax = fig.gca(projection=<span class="hljs-string">&apos;3d&apos;</span>)
+u, v = np.ogrid[<span class="hljs-number">0</span>:<span class="hljs-number">2</span>*np.pi:<span class="hljs-number">20j</span>, <span class="hljs-number">0</span>:np.pi:<span class="hljs-number">20j</span>]
+x=np.cos(u)*np.sin(v)
+y=np.sin(u)*np.sin(v)
+z=np.cos(v)
+ax.plot_surface(x, y, z, rstride=<span class="hljs-number">1</span>, cstride=<span class="hljs-number">1</span>, alpha=<span class="hljs-number">0.3</span>)
+plt.show()
+</code></pre>
+<p>&#x7A0B;&#x5E8F;&#x8FD0;&#x884C;&#x7ED3;&#x679C;&#x5982;&#x4E0B;&#xFF1A;</p>
+<p><img src=".gitbook/assets/figure_14.png" alt=""></p>
+<h2 id="pylab&#x5B9E;&#x65F6;&#x52A8;&#x753B;">pylab&#x5B9E;&#x65F6;&#x52A8;&#x753B;</h2>
+<pre><code class="lang-python"><span class="hljs-keyword">import</span> pylab <span class="hljs-keyword">as</span> pl
+<span class="hljs-keyword">import</span> numpy <span class="hljs-keyword">as</span> np
+
+pl.ion() <span class="hljs-comment">#&#x5B9E;&#x65F6;&#x7ED8;&#x56FE;</span>
+pl.show()
+x = np.arange(<span class="hljs-number">0</span>,<span class="hljs-number">2</span>*np.pi,<span class="hljs-number">0.01</span>)
+line, = pl.plot(x,np.sin(x))
+<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> np.arange(<span class="hljs-number">1</span>,<span class="hljs-number">200</span>):
+    line.set_ydata(np.sin(x+i/<span class="hljs-number">10.0</span>))
+    pl.pause(<span class="hljs-number">0.05</span>)
+pl.ioff() <span class="hljs-comment">#&#x5173;&#x95ED;&#x5B9E;&#x65F6;&#x7ED8;&#x56FE;</span>
+</code></pre>
+<p>&#x7A0B;&#x5E8F;&#x8FD0;&#x884C;&#x7ED3;&#x679C;&#x5982;&#x4E0B;&#xFF1A;</p>
+<p><img src=".gitbook/assets/figure_16.png" alt=""></p>
+<h3 id="&#x52A8;&#x753B;&#x6A21;&#x5757;-animation">&#x52A8;&#x753B;&#x6A21;&#x5757; animation</h3>
+<pre><code class="lang-python"><span class="hljs-keyword">import</span> numpy <span class="hljs-keyword">as</span> np
+<span class="hljs-keyword">import</span> matplotlib.pyplot <span class="hljs-keyword">as</span> plt
+<span class="hljs-keyword">import</span> matplotlib.animation <span class="hljs-keyword">as</span> ani
+
+fig = plt.figure()
+x = np.arange(<span class="hljs-number">0</span>, <span class="hljs-number">2</span>*np.pi, <span class="hljs-number">0.01</span>) <span class="hljs-comment"># x-array</span>
+line, = plt.plot(x, np.sin(x))
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">animate</span><span class="hljs-params">(i)</span>:</span>
+    line.set_ydata(np.sin(x+i/<span class="hljs-number">10.0</span>)) <span class="hljs-comment"># update the data</span>
+    <span class="hljs-keyword">return</span> line
+ani.FuncAnimation(fig, animate, np.arange(<span class="hljs-number">1</span>, <span class="hljs-number">200</span>), interval=<span class="hljs-number">25</span>, blit=<span class="hljs-keyword">True</span>)
+plt.show()
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="11.numpy_and_scipy.html" class="navigation navigation-prev " aria-label="Previous page: 12 扩展：科学计算 numpy和scipy">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="14.advance.html" class="navigation navigation-next " aria-label="Next page: 14 进阶：解决问题">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"13 扩展：绘图模块 matplotlib","level":"1.14","depth":1,"next":{"title":"14 进阶：解决问题","level":"1.15","depth":1,"path":"14.advance.md","ref":"14.advance.md","articles":[]},"previous":{"title":"12 扩展：科学计算 numpy和scipy","level":"1.13","depth":1,"path":"11.numpy_and_scipy.md","ref":"11.numpy_and_scipy.md","articles":[]},"dir":"ltr"},"config":{"plugins":["numbered-headings","betterchinese","-search","search-pro"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"search-pro":{"cutWordLib":"nodejieba","defineWord":["Gitbook Use"]},"numbered-headings":{},"betterchinese":{},"highlight":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"","pdf":{"pageNumbers":true,"fontSize":14,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"简明Python教程-BNU版","language":"zh-hans","gitbook":"*","description":"北师大天文系Pythonj讲义"},"file":{"path":"12.matplotlib.md","mtime":"2018-10-08T01:51:58.977Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-02-17T06:48:59.306Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

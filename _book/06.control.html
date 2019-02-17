@@ -1,0 +1,656 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>6 核心：控制流 · 简明Python教程-BNU版</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-betterchinese/unicode.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="07.data_structures.html" />
+    
+    
+    <link rel="prev" href="05.operators_and_expressions.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    0 前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="01.about_python.html">
+            
+                <a href="01.about_python.html">
+            
+                    
+                    1 基础：背景介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="02.installation.html">
+            
+                <a href="02.installation.html">
+            
+                    
+                    2 基础：安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="03.first_step.html">
+            
+                <a href="03.first_step.html">
+            
+                    
+                    3 基础：初次运行
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="04.basis.html">
+            
+                <a href="04.basis.html">
+            
+                    
+                    4 基础：基本概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="05.operators_and_expressions.html">
+            
+                <a href="05.operators_and_expressions.html">
+            
+                    
+                    5 核心：运算符与表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.7" data-path="06.control.html">
+            
+                <a href="06.control.html">
+            
+                    
+                    6 核心：控制流
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="07.data_structures.html">
+            
+                <a href="07.data_structures.html">
+            
+                    
+                    7 核心：数据结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="08.functions.html">
+            
+                <a href="08.functions.html">
+            
+                    
+                    8 核心：函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="09.modules.html">
+            
+                <a href="09.modules.html">
+            
+                    
+                    9 核心：模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="10.io.html">
+            
+                <a href="10.io.html">
+            
+                    
+                    10 核心：输入输出
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="16.standrad_library.html">
+            
+                <a href="16.standrad_library.html">
+            
+                    
+                    11 核心：标准库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="11.numpy_and_scipy.html">
+            
+                <a href="11.numpy_and_scipy.html">
+            
+                    
+                    12 扩展：科学计算 numpy和scipy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="12.matplotlib.html">
+            
+                <a href="12.matplotlib.html">
+            
+                    
+                    13 扩展：绘图模块 matplotlib
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="14.advance.html">
+            
+                <a href="14.advance.html">
+            
+                    
+                    14 进阶：解决问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="15.exception.html">
+            
+                <a href="15.exception.html">
+            
+                    
+                    15 进阶：错误和异常
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="13.object_oriented_programming.html">
+            
+                <a href="13.object_oriented_programming.html">
+            
+                    
+                    16 进阶：面向对象编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="18.next.html">
+            
+                <a href="18.next.html">
+            
+                    
+                    迈出下一步
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >6 核心：控制流</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p><style>
+body {
+  counter-reset: h1 5;
+}
+</style></p>
+<h1 id="6-&#x6838;&#x5FC3;&#xFF1A;&#x63A7;&#x5236;&#x6D41;">6 &#x6838;&#x5FC3;&#xFF1A;&#x63A7;&#x5236;&#x6D41;</h1>
+<p>&#x622A;&#x6B62;&#x5230;&#x73B0;&#x5728;&#xFF0C;&#x5728;&#x6211;&#x4EEC;&#x6240;&#x770B;&#x8FC7;&#x7684;&#x7A0B;&#x5E8F;&#x4E2D;&#xFF0C;&#x603B;&#x662F;&#x6709;&#x4E00;&#x7CFB;&#x5217;&#x8BED;&#x53E5;&#x4ECE;&#x4E0A;&#x5230;&#x4E0B;&#x7CBE;&#x786E;&#x6392;&#x5217;&#xFF0C;&#x5E76;&#x4EA4;&#x7531; Python &#x5FE0;&#x5B9E;&#x5730;&#x6267;&#x884C;&#x3002;&#x5982;&#x679C;&#x4F60;&#x60F3;&#x6539;&#x53D8;&#x8FD9;&#x4E00;&#x5DE5;&#x4F5C;&#x6D41;&#x7A0B;&#xFF0C;&#x5E94;&#x8BE5;&#x600E;&#x4E48;&#x505A;&#xFF1F;&#x5C31;&#x50CF;&#x8FD9;&#x6837;&#x7684;&#x60C5;&#x51B5;&#xFF1A;&#x4F60;&#x9700;&#x8981;&#x7A0B;&#x5E8F;&#x4F5C;&#x51FA;&#x4E00;&#x4E9B;&#x51B3;&#x5B9A;&#xFF0C;&#x5E76;&#x4F9D;&#x636E;&#x4E0D;&#x540C;&#x7684;&#x60C5;&#x51B5;&#x53BB;&#x5B8C;&#x6210;&#x4E0D;&#x540C;&#x7684;&#x4E8B;&#x60C5;&#xFF0C;&#x4F8B;&#x5982;&#x4F9D;&#x636E;&#x6BCF;&#x5929;&#x65F6;&#x95F4;&#x7684;&#x4E0D;&#x540C;&#x6253;&#x5370;&#x51FA; &apos;&#x65E9;&#x4E0A;&#x597D;&apos; &apos;Good Morning&apos; &#x6216; &apos;&#x665A;&#x4E0A;&#x597D;&apos; &apos;Good Evening&apos;&#xFF1F;</p>
+<p>&#x6B63;&#x5982;&#x4F60;&#x53EF;&#x80FD;&#x5DF2;&#x7ECF;&#x731C;&#x6D4B;&#x5230;&#x7684;&#x90A3;&#x756A;&#xFF0C;&#x8FD9;&#x662F;&#x901A;&#x8FC7;&#x63A7;&#x5236;&#x6D41;&#x8BED;&#x53E5;&#x6765;&#x5B9E;&#x73B0;&#x7684;&#x3002;&#x5728; Python &#x4E2D;&#x6709;&#x4E09;&#x79CD;&#x63A7;&#x5236;&#x6D41;&#x8BED;&#x53E5;&#x2014;&#x2014;<code>if</code> <code>for</code> &#x548C; <code>while</code>&#x3002;</p>
+<h2 id="if-&#x8BED;&#x53E5;"><code>if</code> &#x8BED;&#x53E5;</h2>
+<p><code>if</code> &#x8BED;&#x53E5;&#x7528;&#x4EE5;&#x68C0;&#x67E5;&#x6761;&#x4EF6;&#xFF1A;<em>&#x5982;&#x679C;</em> &#x6761;&#x4EF6;&#x4E3A;&#x771F;&#xFF08;True&#xFF09;&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x8FD0;&#x884C;&#x4E00;&#x5757;&#x8BED;&#x53E5;&#xFF08;&#x79F0;&#x4F5C; <em>if-block</em> &#x6216; <em>if &#x5757;</em>&#xFF09;&#xFF0C;<em>&#x5426;&#x5219;</em> &#x6211;&#x4EEC;&#x5C06;&#x8FD0;&#x884C;&#x53E6;&#x4E00;&#x5757;&#x8BED;&#x53E5;&#xFF08;&#x79F0;&#x4F5C; <em>else-block</em> &#x6216; <em>else &#x5757;</em>&#xFF09;&#x3002;&#x5176;&#x4E2D; <em>else</em> &#x4ECE;&#x53E5;&#x662F;&#x53EF;&#x9009;&#x7684;&#x3002;</p>
+<p>&#x6848;&#x4F8B;&#xFF08;&#x4FDD;&#x5B58;&#x4E3A; <code>if.py</code>&#xFF09;&#xFF1A;</p>
+<pre><code class="lang-python">number = <span class="hljs-number">23</span>
+guess = int(input(<span class="hljs-string">&apos;Enter an integer : &apos;</span>))
+
+<span class="hljs-keyword">if</span> guess == number:
+    <span class="hljs-comment"># &#x65B0;&#x5757;&#x4ECE;&#x8FD9;&#x91CC;&#x5F00;&#x59CB;</span>
+    print(<span class="hljs-string">&apos;Congratulations, you guessed it.&apos;</span>)
+    print(<span class="hljs-string">&apos;(but you do not win any prizes!)&apos;</span>)
+    <span class="hljs-comment"># &#x65B0;&#x5757;&#x5728;&#x8FD9;&#x91CC;&#x7ED3;&#x675F;</span>
+<span class="hljs-keyword">elif</span> guess &lt; number:
+    <span class="hljs-comment"># &#x53E6;&#x4E00;&#x4EE3;&#x7801;&#x5757;</span>
+    print(<span class="hljs-string">&apos;No, it is a little higher than that&apos;</span>)
+    <span class="hljs-comment"># &#x4F60;&#x53EF;&#x4EE5;&#x5728;&#x6B64;&#x505A;&#x4EFB;&#x4F55;&#x4F60;&#x5E0C;&#x671B;&#x5728;&#x8BE5;&#x4EE3;&#x7801;&#x5757;&#x5185;&#x8FDB;&#x884C;&#x7684;&#x4E8B;&#x60C5;</span>
+<span class="hljs-keyword">else</span>:
+    print(<span class="hljs-string">&apos;No, it is a little lower than that&apos;</span>)
+    <span class="hljs-comment"># &#x4F60;&#x5FC5;&#x987B;&#x901A;&#x8FC7;&#x731C;&#x6D4B;&#x4E00;&#x4E2A;&#x5927;&#x4E8E;&#xFF08;&gt;&#xFF09;&#x8BBE;&#x7F6E;&#x6570;&#x7684;&#x6570;&#x5B57;&#x6765;&#x5230;&#x8FBE;&#x8FD9;&#x91CC;&#x3002;</span>
+
+print(<span class="hljs-string">&apos;Done&apos;</span>)
+<span class="hljs-comment"># &#x8FD9;&#x6700;&#x540E;&#x4E00;&#x53E5;&#x8BED;&#x53E5;&#x5C06;&#x5728;</span>
+<span class="hljs-comment"># if &#x8BED;&#x53E5;&#x6267;&#x884C;&#x5B8C;&#x6BD5;&#x540E;&#x6267;&#x884C;&#x3002;</span>
+</code></pre>
+<p>&#x8F93;&#x51FA;&#xFF1A;</p>
+<pre><code class="lang-text">$ python if.py
+Enter an integer : 50
+No, it is a little lower than that
+Done
+
+$ python if.py
+Enter an integer : 22
+No, it is a little higher than that
+Done
+
+$ python if.py
+Enter an integer : 23
+Congratulations, you guessed it.
+(but you do not win any prizes!)
+Done
+</code></pre>
+<p><strong>&#x5B83;&#x662F;&#x5982;&#x4F55;&#x5DE5;&#x4F5C;&#x7684;</strong></p>
+<p>&#x5728;&#x8FD9;&#x4E2A;&#x7A0B;&#x5E8F;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x6839;&#x636E;&#x7528;&#x6237;&#x731C;&#x6D4B;&#x7684;&#x6570;&#x5B57;&#x6765;&#x68C0;&#x67E5;&#x8FD9;&#x4E00;&#x6570;&#x5B57;&#x662F;&#x5426;&#x662F;&#x6211;&#x4EEC;&#x6240;&#x8BBE;&#x7F6E;&#x7684;&#x3002;&#x6211;&#x4EEC;&#x5C06;&#x53D8;&#x91CF; <code>number</code> &#x8BBE;&#x4E3A;&#x4EFB;&#x4F55;&#x6211;&#x4EEC;&#x6240;&#x5E0C;&#x671B;&#x7684;&#x6574;&#x6570;&#xFF0C;&#x4F8B;&#x5982; <code>23</code>&#x3002;&#x7136;&#x540E;&#xFF0C;&#x6211;&#x4EEC;&#x901A;&#x8FC7; <code>input()</code> &#x51FD;&#x6570;&#x6765;&#x83B7;&#x53D6;&#x7528;&#x6237;&#x7684;&#x731C;&#x6D4B;&#x6570;&#x3002;&#x6240;&#x8C13;&#x51FD;&#x6570;&#x662F;&#x4E00;&#x79CD;&#x53EF;&#x91CD;&#x590D;&#x4F7F;&#x7528;&#x7684;&#x7A0B;&#x5E8F;&#x3002;&#x6211;&#x4EEC;&#x5C06;&#x5728;<a href="https://github.com/WuShichao/a-byte-of-python-bnu/tree/4e7952bd0b5a028cd3149f9b9cff837f08531314/10.functions.md#functions" target="_blank">&#x4E0B;&#x4E00;&#x7AE0;</a>&#x8BE6;&#x7EC6;&#x8BA8;&#x8BBA;&#x5B83;&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x4E3A;&#x5185;&#x7F6E;&#x7684; <code>input</code> &#x51FD;&#x6570;&#x63D0;&#x4F9B;&#x4E00;&#x4E32;&#x6253;&#x5370;&#x5230;&#x5C4F;&#x5E55;&#x4E0A;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x5E76;&#x7B49;&#x5F85;&#x7528;&#x6237;&#x7684;&#x8F93;&#x5165;&#x3002;&#x4E00;&#x65E6;&#x6211;&#x4EEC;&#x8F93;&#x5165;&#x4E86;&#x67D0;&#x4E9B;&#x5185;&#x5BB9;&#x5E76;&#x6309;&#x4E0B;&#x952E;&#x76D8;&#x4E0A;&#x7684; <code>enter</code> &#x952E;&#xFF0C;<code>input()</code> &#x51FD;&#x6570;&#x5C06;&#x4EE5;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x5F62;&#x5F0F;&#x8FD4;&#x56DE;&#x6211;&#x4EEC;&#x6240;&#x8F93;&#x5165;&#x7684;&#x5185;&#x5BB9;&#x3002;&#x7136;&#x540E;&#x6211;&#x4EEC;&#x901A;&#x8FC7; <code>int</code> &#x5C06;&#x8FD9;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x8F6C;&#x6362;&#x6210;&#x4E00;&#x4E2A;&#x6574;&#x6570;&#x5E76;&#x5C06;&#x5176;&#x50A8;&#x5B58;&#x5728;&#x53D8;&#x91CF; <code>guess</code> &#x4E2D;&#x3002;&#x5B9E;&#x9645;&#x4E0A;&#xFF0C;<code>int</code> &#x662F;&#x4E00;&#x4E2A;&#x7C7B;&#xFF08;Class&#xFF09;&#xFF0C;&#x4F46;&#x4F60;&#x73B0;&#x5728;&#x4F60;&#x6240;&#x9700;&#x8981;&#x77E5;&#x9053;&#x7684;&#x5C31;&#x662F;&#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x5B83;&#x5C06;&#x4E00;&#x4E32;&#x5B57;&#x7B26;&#x4E32;&#x8F6C;&#x6362;&#x6210;&#x4E00;&#x4E2A;&#x6574;&#x6570;&#xFF08;&#x5047;&#x8BBE;&#x8FD9;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x6587;&#x672C;&#x4E2D;&#x542B;&#x6709;&#x4E00;&#x4E2A;&#x6709;&#x6548;&#x7684;&#x6574;&#x6570;&#xFF09;&#x3002;</p>
+<p>&#x63A5;&#x4E0B;&#x6765;&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x7528;&#x6237;&#x63D0;&#x4F9B;&#x7684;&#x731C;&#x6D4B;&#x6570;&#x4E0E;&#x6211;&#x4EEC;&#x6240;&#x9009;&#x62E9;&#x7684;&#x6570;&#x5B57;&#x8FDB;&#x884C;&#x5BF9;&#x6BD4;&#x3002;&#x5982;&#x679C;&#x5B83;&#x4EEC;&#x76F8;&#x7B49;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x6253;&#x5370;&#x4E00;&#x6761;&#x6210;&#x529F;&#x4FE1;&#x606F;&#x3002;&#x5728;&#x8FD9;&#x91CC;&#x8981;&#x6CE8;&#x610F;&#x5230;&#x6211;&#x4EEC;&#x4F7F;&#x7528;&#x7F29;&#x8FDB;&#x7EA7;&#x522B;&#x6765;&#x544A;&#x8BC9; Python &#x54EA;&#x4E9B;&#x8BED;&#x53E5;&#x5206;&#x522B;&#x5C5E;&#x4E8E;&#x54EA;&#x4E2A;&#x5757;&#x3002;&#x8FD9;&#x4FBF;&#x662F;&#x4E3A;&#x4EC0;&#x4E48;&#x5728; Python &#x4E2D;&#x7F29;&#x8FDB;&#x5982;&#x6B64;&#x91CD;&#x8981;&#x3002;&#x6211;&#x5E0C;&#x671B;&#x4F60;&#x80FD;&#x591F;&#x575A;&#x6301;&#x201C;&#x7F29;&#x8FDB;&#x4E00;&#x81F4;&#x201D;&#x7684;&#x539F;&#x5219;&#x3002;</p>
+<p>&#x53E6;&#x5916;&#x9700;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x662F; <code>if</code> &#x8BED;&#x53E5;&#x5728;&#x7ED3;&#x5C3E;&#x5904;&#x5305;&#x542B;&#x4E00;&#x4E2A;&#x5192;&#x53F7;&#x2014;&#x2014;&#x6211;&#x4EEC;&#x4EE5;&#x6B64;&#x544A;&#x77E5; Python &#x540E;&#x9762;&#x4F1A;&#x6709;&#x4E00;&#x4E2A;&#x8BED;&#x53E5;&#x5757;&#x3002;</p>
+<p>&#x7136;&#x540E;&#xFF0C;&#x6211;&#x4EEC;&#x68C0;&#x67E5;&#x731C;&#x6D4B;&#x6570;&#x662F;&#x5426;&#x5C0F;&#x4E8E;&#x6211;&#x4EEC;&#x9009;&#x62E9;&#x7684;&#x6570;&#x5B57;&#xFF0C;&#x5982;&#x679C;&#x662F;&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x544A;&#x8BC9;&#x7528;&#x6237;&#x4ED6;&#x4EEC;&#x5FC5;&#x987B;&#x731C;&#x4E00;&#x4E2A;&#x66F4;&#x9AD8;&#x4E00;&#x4E9B;&#x7684;&#x6570;&#x5B57;&#x3002;&#x5728;&#x8FD9;&#x91CC;&#x6211;&#x4EEC;&#x4F7F;&#x7528;&#x7684;&#x662F; <code>elif</code> &#x8BED;&#x53E5;&#xFF0C;&#x5B83;&#x4EEC;&#x5B9E;&#x9645;&#x4E0A;&#x5C06;&#x4E24;&#x4E2A;&#x76F8;&#x8FDE;&#x7684; <code>if else-if else</code> &#x8BED;&#x53E5;&#x5408;&#x5E76;&#x6210;&#x4E00;&#x53E5; <code>if-elif-else</code> &#x8BED;&#x53E5;&#x3002;&#x8FD9;&#x80FD;&#x591F;&#x4F7F;&#x7A0B;&#x5E8F;&#x66F4;&#x52A0;&#x7B80;&#x4FBF;&#xFF0C;&#x5E76;&#x4E14;&#x53EF;&#x4EE5;&#x51CF;&#x5C11;&#x6240;&#x9700;&#x8981;&#x7684;&#x7F29;&#x8FDB;&#x91CF;&#x3002;</p>
+<p><code>elif</code> &#x548C; <code>else</code> &#x540C;&#x6837;&#x90FD;&#x5FC5;&#x987B;&#x6709;&#x4E00;&#x4E2A;&#x5192;&#x53F7;&#x5728;&#x5176;&#x903B;&#x8F91;&#x884C;&#x7684;&#x672B;&#x5C3E;&#xFF0C;&#x540E;&#x9762;&#x8DDF;&#x7740;&#x4E0E;&#x5B83;&#x4EEC;&#x76F8;&#x5E94;&#x7684;&#x8BED;&#x53E5;&#x5757;&#xFF08;&#x5F53;&#x7136;&#xFF0C;&#x522B;&#x5FD8;&#x4E86;&#x6070;&#x5F53;&#x7684;&#x7F29;&#x8FDB;&#xFF09;&#x3002;</p>
+<p>&#x4F60;&#x53EF;&#x4EE5;&#x5728; if &#x5757;&#x7684; &#x4E00;&#x4E2A; <code>if</code> &#x8BED;&#x53E5;&#x4E2D;&#x8BBE;&#x7F6E;&#x53E6;&#x4E00;&#x4E2A; <code>if</code> &#x8BED;&#x53E5;&#xFF0C;&#x5E76;&#x53EF;&#x4EE5;&#x5982;&#x6B64;&#x8FDB;&#x884C;&#x4E0B;&#x53BB;&#x2014;&#x2014;&#x8FD9;&#x88AB;&#x79F0;&#x4F5C;&#x5D4C;&#x5957;&#x7684; <code>if</code> &#x8BED;&#x53E5;&#x3002;</p>
+<p>&#x8981;&#x8BB0;&#x4F4F; <code>elif</code> &#x548C; <code>else</code> &#x90E8;&#x5206;&#x90FD;&#x662F;&#x53EF;&#x9009;&#x7684;&#x3002;&#x4E00;&#x4E2A;&#x6700;&#x5C0F;&#x89C4;&#x6A21;&#x4E14;&#x6709;&#x6548;&#x7684; <code>if</code> &#x8BED;&#x53E5;&#x662F;&#x8FD9;&#x6837;&#x7684;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-keyword">if</span> <span class="hljs-keyword">True</span>:
+    print(<span class="hljs-string">&apos;Yes, it is true&apos;</span>)
+</code></pre>
+<p>&#x5F53; Python &#x5B8C;&#x6574;&#x6267;&#x884C;&#x4E86; <code>if</code> &#x8BED;&#x53E5;&#x53CA;&#x4E0E;&#x5176;&#x76F8;&#x5173;&#x7684; <code>elif</code> &#x548C; <code>else</code> &#x5B50;&#x53E5;&#x540E;&#xFF0C;&#x5B83;&#x5C06;&#x4F1A;&#x79FB;&#x52A8;&#x81F3;&#x5305;&#x542B; <code>if</code> &#x8BED;&#x53E5;&#x7684;&#x4EE3;&#x7801;&#x5757;&#x7684;&#x4E0B;&#x4E00;&#x53E5;&#x8BED;&#x53E5;&#x4E2D;&#x3002;&#x5728;&#x672C;&#x4F8B;&#x4E2D;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x4E3B;&#x4EE3;&#x7801;&#x5757;&#xFF08;&#x7A0B;&#x5E8F;&#x5F00;&#x59CB;&#x6267;&#x884C;&#x7684;&#x5730;&#x65B9;&#xFF09;&#xFF0C;&#x5176;&#x4E0B;&#x4E00;&#x53E5;&#x8BED;&#x53E5;&#x5C31;&#x662F; <code>print(&apos;Done&apos;)</code> &#x8BED;&#x53E5;&#x3002;&#x5728;&#x5B8C;&#x6210;&#x8FD9;&#x4E9B;&#x5DE5;&#x4F5C;&#x540E;&#xFF0C;Python &#x4F1A;&#x53D1;&#x73B0;&#x5DF2;&#x884C;&#x81F3;&#x7A0B;&#x5E8F;&#x672B;&#x5C3E;&#x5E76;&#x5BA3;&#x544A;&#x5DE5;&#x4F5C;&#x7684;&#x5B8C;&#x6210;&#x3002;</p>
+<p>&#x5C3D;&#x7BA1;&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x975E;&#x5E38;&#x7B80;&#x5355;&#x7684;&#x7A0B;&#x5E8F;&#xFF0C;&#x6211;&#x4E5F;&#x4E00;&#x76F4;&#x5728;&#x5176;&#x4E2D;&#x6307;&#x51FA;&#x4F60;&#x5E94;&#x8BE5;&#x6CE8;&#x610F;&#x7684;&#x4E8B;&#x60C5;&#x3002;&#x6240;&#x6709;&#x7684;&#x8FD9;&#x4E9B;&#x90FD;&#x53EF;&#x7B97;&#x662F;&#x7B80;&#x5355;&#x6613;&#x61C2;&#xFF08;&#x5BF9;&#x4E8E;&#x90A3;&#x4E9B;&#x5177;&#x6709; C/C++ &#x80CC;&#x666F;&#x7684;&#x4EBA;&#x6765;&#x8BF4;&#x662F;&#x76F8;&#x5F53;&#x7B80;&#x5355;&#x6613;&#x61C2;&#xFF09;&#x3002;&#x4E0D;&#x8FC7;&#x5728;&#x5F00;&#x59CB;&#x65F6;&#x5B83;&#x4EEC;&#x8FD8;&#x662F;&#x53EF;&#x80FD;&#x4F1A;&#x4E0D;&#x65AD;&#x5438;&#x5F15;&#x4F60;&#x7684;&#x6CE8;&#x610F;&#xFF0C;&#x4E0D;&#x65AD;&#x5730;&#x53BB;&#x5728;&#x610F;&#x5B83;&#x4EEC;&#x3002;&#x4F46;&#x7ECF;&#x8FC7;&#x4E00;&#x4E9B;&#x66F4;&#x4E30;&#x5BCC;&#x7684;&#x64CD;&#x4F5C;&#x540E;&#x4F60;&#x5C31;&#x4F1A;&#x4E60;&#x60EF;&#x5B83;&#x4EEC;&#x53CA;&#x5176;&#x4E2D;&#x7684;&#x903B;&#x8F91;&#xFF0C;&#x5B83;&#x4EEC;&#x5BF9;&#x4E8E;&#x4F60;&#x6765;&#x8BF4;&#x5C06;&#x4F1A;&#x6210;&#x4E3A;&#x201C;&#x81EA;&#x7136;&#x800C;&#x7136;&#x201D;&#x7684;&#x4E8B;&#x60C5;&#x3002;</p>
+<blockquote>
+<p><strong>&#x9488;&#x5BF9; C/C++ &#x7A0B;&#x5E8F;&#x5458;&#x7684;&#x63D0;&#x793A;</strong></p>
+<p>Python &#x4E2D;&#x4E0D;&#x5B58;&#x5728; <code>switch</code> &#x8BED;&#x53E5;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4F7F;&#x7528; <code>if..elif..else</code> &#x8BED;&#x53E5;&#x6765;&#x5B9E;&#x73B0;&#x540C;&#x6837;&#x7684;&#x4E8B;&#x60C5;&#xFF08;&#x5728;&#x67D0;&#x4E9B;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x4F7F;&#x7528;&#x4E00;&#x90E8;<a href="https://github.com/WuShichao/a-byte-of-python-bnu/tree/4e7952bd0b5a028cd3149f9b9cff837f08531314/12.data_structures.md#dictionary" target="_blank">&#x5B57;&#x5178;</a>&#x80FD;&#x591F;&#x66F4;&#x5FEB;&#x901F;&#x5730;&#x5B8C;&#x6210;&#xFF09;&#x3002;</p>
+</blockquote>
+<h2 id="while-&#x8BED;&#x53E5;"><code>while</code> &#x8BED;&#x53E5;</h2>
+<p><code>while</code> &#x8BED;&#x53E5;&#x80FD;&#x591F;&#x8BA9;&#x4F60;&#x5728;&#x6761;&#x4EF6;&#x4E3A;&#x771F;&#x7684;&#x524D;&#x63D0;&#x4E0B;&#x91CD;&#x590D;&#x6267;&#x884C;&#x67D0;&#x5757;&#x8BED;&#x53E5;&#x3002; <code>while</code> &#x8BED;&#x53E5;&#x662F; <em>&#x5FAA;&#x73AF;&#xFF08;Looping&#xFF09;</em> &#x8BED;&#x53E5;&#x7684;&#x4E00;&#x79CD;&#x3002;<code>while</code> &#x8BED;&#x53E5;&#x540C;&#x6837;&#x53EF;&#x4EE5;&#x62E5;&#x6709; <code>else</code> &#x5B50;&#x53E5;&#x4F5C;&#x4E3A;&#x53EF;&#x9009;&#x9009;&#x9879;&#x3002;</p>
+<p>&#x6848;&#x4F8B;&#xFF08;&#x4FDD;&#x5B58;&#x4E3A; <code>while.py</code>&#xFF09;&#xFF1A;</p>
+<pre><code class="lang-python">number = <span class="hljs-number">23</span>
+running = <span class="hljs-keyword">True</span>
+
+<span class="hljs-keyword">while</span> running:
+    guess = int(input(<span class="hljs-string">&apos;Enter an integer : &apos;</span>))
+
+    <span class="hljs-keyword">if</span> guess == number:
+        print(<span class="hljs-string">&apos;Congratulations, you guessed it.&apos;</span>)
+        <span class="hljs-comment"># &#x8FD9;&#x5C06;&#x5BFC;&#x81F4; while &#x5FAA;&#x73AF;&#x4E2D;&#x6B62;</span>
+        running = <span class="hljs-keyword">False</span>
+    <span class="hljs-keyword">elif</span> guess &lt; number:
+        print(<span class="hljs-string">&apos;No, it is a little higher than that.&apos;</span>)
+    <span class="hljs-keyword">else</span>:
+        print(<span class="hljs-string">&apos;No, it is a little lower than that.&apos;</span>)
+<span class="hljs-keyword">else</span>:
+    print(<span class="hljs-string">&apos;The while loop is over.&apos;</span>)
+    <span class="hljs-comment"># &#x5728;&#x8FD9;&#x91CC;&#x4F60;&#x53EF;&#x4EE5;&#x505A;&#x4F60;&#x60F3;&#x505A;&#x7684;&#x4EFB;&#x4F55;&#x4E8B;</span>
+
+print(<span class="hljs-string">&apos;Done&apos;</span>)
+</code></pre>
+<p>&#x8F93;&#x51FA;&#xFF1A;</p>
+<pre><code class="lang-text">$ python while.py
+Enter an integer : 50
+No, it is a little lower than that.
+Enter an integer : 22
+No, it is a little higher than that.
+Enter an integer : 23
+Congratulations, you guessed it.
+The while loop is over.
+Done
+</code></pre>
+<p><strong>&#x5B83;&#x662F;&#x5982;&#x4F55;&#x5DE5;&#x4F5C;&#x7684;</strong></p>
+<p>&#x5728;&#x8FD9;&#x4E00;&#x7A0B;&#x5E8F;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x4F9D;&#x65E7;&#x901A;&#x8FC7;&#x731C;&#x6570;&#x6E38;&#x620F;&#x6765;&#x6F14;&#x793A;&#xFF0C;&#x4E0D;&#x8FC7;&#x65B0;&#x7A0B;&#x5E8F;&#x7684;&#x4F18;&#x70B9;&#x5728;&#x4E8E;&#x80FD;&#x591F;&#x5141;&#x8BB8;&#x7528;&#x6237;&#x6301;&#x7EED;&#x731C;&#x6D4B;&#x76F4;&#x81F3;&#x4ED6;&#x731C;&#x4E2D;&#x4E3A;&#x6B62;&#x2014;&#x2014;&#x800C;&#x65E0;&#x9700;&#x50CF;&#x6211;&#x4EEC;&#x5728;&#x4E0A;&#x4E00;&#x8282;&#x4E2D;&#x6240;&#x505A;&#x7684;&#x90A3;&#x6837;&#xFF0C;&#x6BCF;&#x6B21;&#x731C;&#x6D4B;&#x90FD;&#x8981;&#x91CD;&#x65B0;&#x8FD0;&#x884C;&#x7A0B;&#x5E8F;&#x3002;&#x8FD9;&#x79CD;&#x53D8;&#x5316;&#x6070;&#x5230;&#x597D;&#x5904;&#x5730;&#x6F14;&#x793A;&#x4E86; <code>while</code> &#x8BED;&#x53E5;&#x7684;&#x4F5C;&#x7528;&#x3002;</p>
+<p>&#x9996;&#x5148;&#x6211;&#x4EEC;&#x5C06; <code>input</code> &#x4E0E; <code>if</code> &#x8BED;&#x53E5;&#x79FB;&#x5230; <code>while</code> &#x5FAA;&#x73AF;&#x4E4B;&#x4E2D;&#xFF0C;&#x5E76;&#x5728; while &#x5FAA;&#x73AF;&#x5F00;&#x59CB;&#x524D;&#x5C06;&#x53D8;&#x91CF; <code>running</code> &#x8BBE;&#x7F6E;&#x4E3A; <code>True</code>&#x3002;&#x7A0B;&#x5E8F;&#x5F00;&#x59CB;&#x65F6;&#xFF0C;&#x6211;&#x4EEC;&#x9996;&#x5148;&#x68C0;&#x67E5;&#x53D8;&#x91CF; <code>running</code> &#x662F;&#x5426;&#x4E3A; <code>True</code>&#xFF0C;&#x4E4B;&#x540E;&#x518D;&#x6267;&#x884C;&#x76F8;&#x5E94;&#x7684; <em>while &#x5757;</em>&#x3002;&#x5728;&#x8FD9;&#x4E00;&#x4EE3;&#x7801;&#x5757;&#x88AB;&#x6267;&#x884C;&#x4E4B;&#x540E;&#xFF0C;&#x5C06;&#x4F1A;&#x91CD;&#x65B0;&#x5BF9;&#x6761;&#x4EF6;&#x8FDB;&#x884C;&#x68C0;&#x67E5;&#xFF0C;&#x5728;&#x672C;&#x4F8B;&#x4E2D;&#x4E5F;&#x5C31;&#x662F; <code>running</code> &#x53D8;&#x91CF;&#x3002;&#x5982;&#x679C;&#x5B83;&#x4F9D;&#x65E7;&#x4E3A; <code>True</code>&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x518D;&#x6B21;&#x6267;&#x884C; while &#x5757;&#xFF0C;&#x5426;&#x5219;&#x6211;&#x4EEC;&#x5C06;&#x7EE7;&#x7EED;&#x6267;&#x884C;&#x53EF;&#x9009;&#x7684; else &#x5757;&#xFF0C;&#x7136;&#x540E;&#x8FDB;&#x5165;&#x5230;&#x4E0B;&#x4E00;&#x4E2A;&#x8BED;&#x53E5;&#x4E2D;&#x3002;</p>
+<p><code>else</code> &#x4EE3;&#x7801;&#x5757;&#x5728; <code>while</code> &#x5FAA;&#x73AF;&#x7684;&#x6761;&#x4EF6;&#x53D8;&#x4E3A; <code>False</code> &#x65F6;&#x5F00;&#x59CB;&#x6267;&#x884C;&#x2014;&#x2014;&#x8FD9;&#x4E2A;&#x5F00;&#x59CB;&#x7684;&#x65F6;&#x673A;&#x751A;&#x81F3;&#x53EF;&#x80FD;&#x662F;&#x5728;&#x7B2C;&#x4E00;&#x6B21;&#x68C0;&#x67E5;&#x6761;&#x4EF6;&#x7684;&#x65F6;&#x5019;&#x3002;&#x5982;&#x679C; <code>while</code> &#x5FAA;&#x73AF;&#x4E2D;&#x5B58;&#x5728;&#x4E00;&#x4E2A; <code>else</code> &#x4EE3;&#x7801;&#x5757;&#xFF0C;&#x5B83;&#x5C06;&#x603B;&#x662F;&#x88AB;&#x6267;&#x884C;&#xFF0C;&#x9664;&#x975E;&#x4F60;&#x901A;&#x8FC7; <code>break</code> &#x8BED;&#x53E5;&#x6765;&#x4E2D;&#x65AD;&#x8FD9;&#x4E00;&#x5FAA;&#x73AF;&#x3002;</p>
+<p><code>True</code> &#x548C; <code>False</code> &#x88AB;&#x79F0;&#x4F5C;&#x5E03;&#x5C14;&#xFF08;Boolean&#xFF09;&#x578B;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x5C06;&#x5B83;&#x4EEC;&#x5206;&#x522B;&#x7B49;&#x4EF7;&#x5730;&#x89C6;&#x4E3A; <code>1</code> &#x4E0E; <code>0</code>&#x3002;</p>
+<blockquote>
+<p><strong>&#x9488;&#x5BF9; C/C++ &#x7A0B;&#x5E8F;&#x5458;&#x7684;&#x63D0;&#x793A;</strong></p>
+<p>&#x4F60;&#x53EF;&#x4EE5;&#x5728; <code>while</code> &#x5FAA;&#x73AF;&#x4E2D;&#x4F7F;&#x7528; <code>else</code> &#x4ECE;&#x53E5;&#x3002;</p>
+</blockquote>
+<h2 id="for-&#x5FAA;&#x73AF;"><code>for</code> &#x5FAA;&#x73AF;</h2>
+<p><code>for...in</code> &#x8BED;&#x53E5;&#x662F;&#x53E6;&#x4E00;&#x79CD;&#x5FAA;&#x73AF;&#x8BED;&#x53E5;&#xFF0C;&#x5176;&#x7279;&#x70B9;&#x662F;&#x4F1A;&#x5728;&#x4E00;&#x7CFB;&#x5217;&#x5BF9;&#x8C61;&#x4E0A;&#x8FDB;&#x884C;<em>&#x8FED;&#x4EE3;&#xFF08;Iterates&#xFF09;</em>&#xFF0C;&#x610F;&#x5373;&#x5B83;&#x4F1A;&#x904D;&#x5386;&#x5E8F;&#x5217;&#x4E2D;&#x7684;&#x6BCF;&#x4E00;&#x4E2A;&#x9879;&#x76EE;&#x3002;&#x6211;&#x4EEC;&#x5C06;&#x5728;&#x540E;&#x9762;&#x7684;<a href="https://github.com/WuShichao/a-byte-of-python-bnu/tree/4e7952bd0b5a028cd3149f9b9cff837f08531314/12.data_structures.md#sequence" target="_blank">&#x5E8F;&#x5217;&#xFF08;Sequences&#xFF09;</a>&#x7AE0;&#x8282;&#x4E2D;&#x4E86;&#x89E3;&#x6709;&#x5173;&#x5B83;&#x7684;&#x66F4;&#x591A;&#x5185;&#x5BB9;&#x3002;&#x73B0;&#x5728;&#x4F60;&#x6240;&#x9700;&#x8981;&#x7684;&#x5C31;&#x662F;&#x6240;&#x8C13;&#x961F;&#x5217;&#x5C31;&#x662F;&#x4E00;&#x7CFB;&#x5217;&#x9879;&#x76EE;&#x7684;&#x6709;&#x5E8F;&#x96C6;&#x5408;&#x3002;</p>
+<p>&#x6848;&#x4F8B;&#xFF08;&#x4FDD;&#x5B58;&#x4E3A; <code>for.py</code>&#xFF09;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">1</span>, <span class="hljs-number">5</span>):
+    print(i)
+<span class="hljs-keyword">else</span>:
+    print(<span class="hljs-string">&apos;The for loop is over&apos;</span>)
+</code></pre>
+<p>&#x8F93;&#x51FA;&#xFF1A;</p>
+<pre><code class="lang-text">$ python for.py
+1
+2
+3
+4
+The for loop is over
+</code></pre>
+<p><strong>&#x5B83;&#x662F;&#x5982;&#x4F55;&#x5DE5;&#x4F5C;&#x7684;</strong></p>
+<p>&#x5728;&#x8FD9;&#x4E00;&#x7A0B;&#x5E8F;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x6253;&#x5370;&#x4E86;&#x4E00;&#x4E2A;&#x6570;&#x5B57;<em>&#x5E8F;&#x5217;</em>&#x3002;&#x6211;&#x4EEC;&#x901A;&#x8FC7;&#x5185;&#x7F6E;&#x7684; <code>range</code> &#x51FD;&#x6570;&#x751F;&#x6210;&#x8FD9;&#x4E00;&#x6570;&#x5B57;&#x5E8F;&#x5217;&#x3002;</p>
+<p>&#x5728;&#x8FD9;&#x91CC;&#x6211;&#x4EEC;&#x6240;&#x8981;&#x505A;&#x7684;&#x4E8B;&#x60C5;&#x662F;&#x63D0;&#x4F9B;&#x4E24;&#x4E2A;&#x6570;&#x5B57;&#xFF0C;&#x800C; <code>range</code> &#x5C06;&#x4F1A;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x6570;&#x5B57;&#x5E8F;&#x5217;&#xFF0C;&#x4ECE;&#x7B2C;&#x4E00;&#x4E2A;&#x6570;&#x5B57;&#x5F00;&#x59CB;&#xFF0C;&#x81F3;&#x7B2C;&#x4E8C;&#x4E2A;&#x6570;&#x5B57;&#x7ED3;&#x675F;&#x3002;&#x4E3E;&#x4E2A;&#x4F8B;&#x5B50;&#xFF0C;<code>range(1,5)</code> &#x5C06;&#x8F93;&#x51FA;&#x5E8F;&#x5217; <code>[1, 2, 3, 4]</code>&#x3002;&#x5728;&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;<code>range</code> &#x5C06;&#x4F1A;&#x4EE5; 1 &#x9010;&#x6B65;&#x9012;&#x589E;&#x3002;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x5411; <code>range</code> &#x63D0;&#x4F9B;&#x7B2C;&#x4E09;&#x4E2A;&#x6570;&#x5B57;&#xFF0C;&#x5219;&#x8FD9;&#x4E2A;&#x6570;&#x5B57;&#x5C06;&#x6210;&#x4E3A;&#x9010;&#x6B65;&#x9012;&#x589E;&#x7684;&#x52A0;&#x6570;&#x3002;&#x540C;&#x6837;&#x4E3E;&#x4E2A;&#x4F8B;&#x5B50;&#x6765;&#x8BF4;&#x660E;&#xFF0C;<code>range(1,5,2)</code> &#x5C06;&#x4F1A;&#x8F93;&#x51FA; <code>[1, 3]</code>&#x3002;&#x8981;&#x8BB0;&#x4F4F;&#x8FD9;&#x4E00;&#x5E8F;&#x5217;&#x6269;&#x5C55;<em>&#x76F4;&#x5230;</em>&#x7B2C;&#x4E8C;&#x4E2A;&#x6570;&#x5B57;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;&#x5B83;<em>&#x4E0D;&#x4F1A;</em>&#x5305;&#x62EC;&#x7B2C;&#x4E8C;&#x4E2A;&#x6570;&#x5B57;&#x5728;&#x5185;&#x3002;</p>
+<p>&#x53E6;&#x5916;&#x9700;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x662F;&#xFF0C;<code>range()</code> &#x6BCF;&#x6B21;&#x53EA;&#x4F1A;&#x751F;&#x6210;&#x4E00;&#x4E2A;&#x6570;&#x5B57;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x5E0C;&#x671B;&#x83B7;&#x5F97;&#x5B8C;&#x6574;&#x7684;&#x6570;&#x5B57;&#x5217;&#x8868;&#xFF0C;&#x8981;&#x5728;&#x4F7F;&#x7528; <code>range()</code> &#x65F6;&#x8C03;&#x7528; <code>list()</code>&#x3002;&#x4F8B;&#x5982;&#x4E0B;&#x9762;&#x8FD9;&#x6837;&#xFF1A;<code>list(range(5))</code> &#xFF0C;&#x5B83;&#x5C06;&#x4F1A;&#x8FD4;&#x56DE; <code>[0, 1, 2, 3, 4]</code>&#x3002;&#x6709;&#x5173;&#x5217;&#x8868;&#x7684;&#x8BE6;&#x7EC6;&#x89E3;&#x91CA;&#x5C06;&#x4F1A;&#x5728; <a href="https://github.com/WuShichao/a-byte-of-python-bnu/tree/4e7952bd0b5a028cd3149f9b9cff837f08531314/12.data_structures.md#data-structures" target="_blank">&#x300A;&#x6570;&#x636E;&#x7ED3;&#x6784;&#x300B;&#x4E00;&#x7AE0;</a>&#x5448;&#x73B0;&#x3002;</p>
+<p>&#x7136;&#x540E; <code>for</code> &#x5FAA;&#x73AF;&#x5C31;&#x4F1A;&#x5728;&#x8FD9;&#x4E00;&#x8303;&#x56F4;&#x5185;&#x5C55;&#x5F00;&#x9012;&#x5F52;&#x2014;&#x2014;<code>for i in range(1,5)</code> &#x7B49;&#x4EF7;&#x4E8E; <code>for i in [1, 2, 3, 4]</code>&#xFF0C;&#x8FD9;&#x4E2A;&#x64CD;&#x4F5C;&#x5C06;&#x4F9D;&#x6B21;&#x5C06;&#x961F;&#x5217;&#x91CC;&#x7684;&#x6BCF;&#x4E2A;&#x6570;&#x5B57;&#xFF08;&#x6216;&#x662F;&#x5BF9;&#x8C61;&#xFF09;&#x5206;&#x914D;&#x7ED9; <code>i</code>&#xFF0C;&#x4E00;&#x6B21;&#x4E00;&#x4E2A;&#xFF0C;&#x7136;&#x540E;&#x4EE5;&#x6BCF;&#x4E2A; <code>i</code> &#x7684;&#x503C;&#x6267;&#x884C;&#x8BED;&#x53E5;&#x5757;&#x3002;&#x5728;&#x672C;&#x4F8B;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x8FD9;&#x4E00;&#x8BED;&#x53E5;&#x5757;&#x6240;&#x505A;&#x7684;&#x5C31;&#x662F;&#x6253;&#x5370;&#x51FA;&#x8FD9;&#x4E9B;&#x503C;&#x3002;</p>
+<p>&#x540C;&#x6837;&#x8981;&#x8BB0;&#x4F4F;&#xFF0C;<code>else</code> &#x90E8;&#x5206;&#x662F;&#x53EF;&#x9009;&#x7684;&#x3002;&#x5F53;&#x5FAA;&#x73AF;&#x4E2D;&#x5305;&#x542B;&#x4ED6;&#x65F6;&#xFF0C;&#x5B83;&#x603B;&#x4F1A;&#x5728; <code>for</code> &#x5FAA;&#x73AF;&#x7ED3;&#x675F;&#x540E;&#x5F00;&#x59CB;&#x6267;&#x884C;&#xFF0C;&#x9664;&#x975E;&#x7A0B;&#x5E8F;&#x9047;&#x5230;&#x4E86; <a href="06.control.html#break-statement">break</a> &#x8BED;&#x53E5;&#x3002;</p>
+<p>&#x53E6;&#x4E00;&#x4E2A;&#x9700;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x5730;&#x65B9;&#x662F; <code>for...in</code> &#x80FD;&#x5728;&#x4EFB;&#x4F55;&#x961F;&#x5217;&#x4E2D;&#x5DE5;&#x4F5C;&#x3002;&#x5728;&#x8FD9;&#x91CC;&#xFF0C;&#x6211;&#x4EEC;&#x6709;&#x7684;&#x662F;&#x901A;&#x8FC7;&#x5185;&#x7F6E;&#x7684; <code>range</code> &#x51FD;&#x6570;&#x751F;&#x6210;&#x7684;&#x4E00;&#x4E32;&#x6570;&#x5B57;&#x5217;&#x8868;&#xFF0C;&#x4F46;&#x603B;&#x4F53;&#x6765;&#x8BF4;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5305;&#x542B;&#x4EFB;&#x4F55;&#x7C7B;&#x578B;&#x5BF9;&#x8C61;&#x7684;&#x961F;&#x5217;&#xFF01;&#x6211;&#x4EEC;&#x5C06;&#x4F1A;&#x5728;&#x540E;&#x9762;&#x7684;&#x7AE0;&#x8282;&#x8BE6;&#x7EC6;&#x89E3;&#x91CA;&#x8FD9;&#x4E00;&#x89C2;&#x5FF5;&#x3002;</p>
+<blockquote>
+<p><strong>&#x9488;&#x5BF9; C/C++/Java/C# &#x7A0B;&#x5E8F;&#x5458;&#x7684;&#x63D0;&#x793A;</strong></p>
+<p>Python &#x4E2D;&#x7684; <code>for</code> &#x5FAA;&#x73AF;&#x548C; C/C++ &#x4E2D;&#x7684; <code>for</code> &#x5FAA;&#x73AF;&#x53EF;&#x4EE5;&#x8BF4;&#x662F;&#x5B8C;&#x5168;&#x4E0D;&#x540C;&#x3002;C# &#x7A0B;&#x5E8F;&#x5458;&#x4F1A;&#x6CE8;&#x610F;&#x5230; Python &#x4E2D;&#x7684; <code>for</code> &#x5FAA;&#x73AF;&#x4E0E; C# &#x4E2D;&#x7684; <code>foreach</code> &#x5FAA;&#x73AF;&#x76F8;&#x4F3C;&#x3002;Java &#x7A0B;&#x5E8F;&#x5458;&#x5219;&#x4F1A;&#x6CE8;&#x610F;&#x5230;&#x5B83;&#x540C;&#x6837;&#x4E0E; Java 1.5 &#x4E2D;&#x7684; <code>for (int i : IntArray)</code> &#x65E0;&#x751A;&#x533A;&#x522B;&#x3002;</p>
+<p>&#x5728; C/C++ &#x4E2D;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x5E0C;&#x671B;&#x7F16;&#x5199; <code>for (int i = 0; i &lt; 5; i++)</code>&#xFF0C;&#x90A3;&#x4E48;&#x5728; Python &#x4F60;&#x53EA;&#x9700;&#x8981;&#x5199;&#x4E0B; <code>for i in range(0,5)</code>&#x3002;&#x6B63;&#x5982;&#x4F60;&#x6240;&#x770B;&#x5230;&#x7684;&#xFF0C;Python &#x4E2D;&#x7684; <code>for</code> &#x5FAA;&#x73AF;&#x5C06;&#x66F4;&#x52A0;&#x7B80;&#x5355;&#xFF0C;&#x66F4;&#x5177;&#x8868;&#x73B0;&#x529B;&#x4E14;&#x66F4;&#x4E0D;&#x5BB9;&#x6613;&#x51FA;&#x9519;&#x3002;</p>
+</blockquote>
+<h2 id="break-statement"><code>break</code> &#x8BED;&#x53E5; </h2>
+<p><code>break</code> &#x8BED;&#x53E5;&#x7528;&#x4EE5;<em>&#x4E2D;&#x65AD;</em>&#xFF08;Break&#xFF09;&#x5FAA;&#x73AF;&#x8BED;&#x53E5;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x4E2D;&#x6B62;&#x5FAA;&#x73AF;&#x8BED;&#x53E5;&#x7684;&#x6267;&#x884C;&#xFF0C;&#x5373;&#x4F7F;&#x5FAA;&#x73AF;&#x6761;&#x4EF6;&#x6CA1;&#x6709;&#x53D8;&#x66F4;&#x4E3A; <code>False</code>&#xFF0C;&#x6216;&#x961F;&#x5217;&#x4E2D;&#x7684;&#x9879;&#x76EE;&#x5C1A;&#x672A;&#x5B8C;&#x5168;&#x8FED;&#x4EE3;&#x4F9D;&#x65E7;&#x5982;&#x6B64;&#x3002;</p>
+<p>&#x6709;&#x4E00;&#x70B9;&#x9700;&#x8981;&#x5C24;&#x5176;&#x6CE8;&#x610F;&#xFF0C;&#x5982;&#x679C;&#x4F60; <em>&#x4E2D;&#x65AD;</em> &#x4E86;&#x4E00;&#x4E2A; <code>for</code> &#x6216; <code>while</code> &#x5FAA;&#x73AF;&#xFF0C;&#x4EFB;&#x4F55;&#x76F8;&#x5E94;&#x5FAA;&#x73AF;&#x4E2D;&#x7684; <code>else</code> &#x5757;&#x90FD;&#x5C06;<em>&#x4E0D;&#x4F1A;</em>&#x88AB;&#x6267;&#x884C;&#x3002;</p>
+<p>&#x6848;&#x4F8B;&#xFF08;&#x4FDD;&#x5B58;&#x4E3A; <code>break.py</code>&#xFF09;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-keyword">while</span> <span class="hljs-keyword">True</span>:
+    s = input(<span class="hljs-string">&apos;Enter something : &apos;</span>)
+    <span class="hljs-keyword">if</span> s == <span class="hljs-string">&apos;quit&apos;</span>:
+        <span class="hljs-keyword">break</span>
+    print(<span class="hljs-string">&apos;Length of the string is&apos;</span>, len(s))
+print(<span class="hljs-string">&apos;Done&apos;</span>)
+</code></pre>
+<p>&#x8F93;&#x51FA;&#xFF1A;</p>
+<pre><code class="lang-text">$ python break.py
+Enter something : Programming is fun
+Length of the string is 18
+Enter something : When the work is done
+Length of the string is 21
+Enter something : if you wanna make your work also fun:
+Length of the string is 37
+Enter something : use Python!
+Length of the string is 11
+Enter something : quit
+Done
+</code></pre>
+<p><strong>&#x5B83;&#x662F;&#x5982;&#x4F55;&#x5DE5;&#x4F5C;&#x7684;</strong></p>
+<p>&#x5728;&#x672C;&#x7A0B;&#x5E8F;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x91CD;&#x590D;&#x5730;&#x63A5;&#x53D7;&#x7528;&#x6237;&#x7684;&#x8F93;&#x5165;&#x5185;&#x5BB9;&#x5E76;&#x6253;&#x5370;&#x51FA;&#x6BCF;&#x4E00;&#x6B21;&#x8F93;&#x5165;&#x5185;&#x5BB9;&#x7684;&#x957F;&#x5EA6;&#x3002;&#x6211;&#x4EEC;&#x901A;&#x8FC7;&#x68C0;&#x67E5;&#x7528;&#x6237;&#x8F93;&#x5165;&#x7684;&#x662F;&#x5426;&#x662F; <code>quit</code> &#x8FD9;&#x4E00;&#x7279;&#x6B8A;&#x6761;&#x4EF6;&#x6765;&#x5224;&#x65AD;&#x662F;&#x5426;&#x5E94;&#x8BE5;&#x7EC8;&#x6B62;&#x7A0B;&#x5E8F;&#x3002;&#x6211;&#x4EEC;&#x901A;&#x8FC7;<em>&#x4E2D;&#x65AD;</em>&#x5FAA;&#x73AF;&#x5E76;&#x8F6C;&#x8FDB;&#x81F3;&#x7A0B;&#x5E8F;&#x672B;&#x5C3E;&#x6765;&#x7ED3;&#x675F;&#x8FD9;&#x4E00;&#x7A0B;&#x5E8F;&#x3002;</p>
+<p>&#x8F93;&#x5165;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x957F;&#x5EA6;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5185;&#x7F6E;&#x7684; <code>len</code> &#x51FD;&#x6570;&#x6765;&#x627E;&#x5230;&#x3002;</p>
+<p>&#x8BB0;&#x4F4F;&#xFF0C;<code>break</code> &#x8BED;&#x53E5;&#x540C;&#x6837;&#x53EF;&#x4EE5;&#x9002;&#x7528;&#x4E8E; <code>for</code> &#x5FAA;&#x73AF;&#x3002;</p>
+<p><strong>Swaroop &#x7684;&#x8BD7;&#x610F; Python</strong></p>
+<p>&#x6211;&#x6240;&#x4F7F;&#x7528;&#x7684;&#x8F93;&#x5165;&#x5185;&#x5BB9;&#x662F;&#x4E00;&#x9996;&#x6211;&#x6240;&#x5199;&#x7684;&#x5C0F;&#x8BD7;&#xFF1A;</p>
+<pre><code class="lang-text">Programming is fun
+When the work is done
+if you wanna make your work also fun:
+    use Python!
+</code></pre>
+<h2 id="continue-statement"><code>continue</code> &#x8BED;&#x53E5; </h2>
+<p><code>continue</code> &#x8BED;&#x53E5;&#x7528;&#x4EE5;&#x544A;&#x8BC9; Python &#x8DF3;&#x8FC7;&#x5F53;&#x524D;&#x5FAA;&#x73AF;&#x5757;&#x4E2D;&#x7684;&#x5269;&#x4F59;&#x8BED;&#x53E5;&#xFF0C;&#x5E76;<em>&#x7EE7;&#x7EED;</em>&#x8BE5;&#x5FAA;&#x73AF;&#x7684;&#x4E0B;&#x4E00;&#x6B21;&#x8FED;&#x4EE3;&#x3002;</p>
+<p>&#x6848;&#x4F8B;&#xFF08;&#x4FDD;&#x5B58;&#x4E3A; <code>continue.py</code>&#xFF09;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-keyword">while</span> <span class="hljs-keyword">True</span>:
+    s = input(<span class="hljs-string">&apos;Enter something : &apos;</span>)
+    <span class="hljs-keyword">if</span> s == <span class="hljs-string">&apos;quit&apos;</span>:
+        <span class="hljs-keyword">break</span>
+    <span class="hljs-keyword">if</span> len(s) &lt; <span class="hljs-number">3</span>:
+        print(<span class="hljs-string">&apos;Too small&apos;</span>)
+        <span class="hljs-keyword">continue</span>
+    print(<span class="hljs-string">&apos;Input is of sufficient length&apos;</span>)
+    <span class="hljs-comment"># &#x81EA;&#x6B64;&#x5904;&#x8D77;&#x7EE7;&#x7EED;&#x8FDB;&#x884C;&#x5176;&#x5B83;&#x4EFB;&#x4F55;&#x5904;&#x7406;</span>
+</code></pre>
+<p>&#x8F93;&#x51FA;&#xFF1A;</p>
+<pre><code class="lang-text">$ python continue.py
+Enter something : a
+Too small
+Enter something : 12
+Too small
+Enter something : abc
+Input is of sufficient length
+Enter something : quit
+</code></pre>
+<p><strong>&#x5B83;&#x662F;&#x5982;&#x4F55;&#x5DE5;&#x4F5C;&#x7684;</strong></p>
+<p>&#x5728;&#x672C;&#x7A0B;&#x5E8F;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x63A5;&#x53D7;&#x6765;&#x81EA;&#x7528;&#x6237;&#x7684;&#x8F93;&#x5165;&#x5185;&#x5BB9;&#xFF0C;&#x4F46;&#x662F;&#x53EA;&#x6709;&#x5728;&#x8F93;&#x5165;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x5176;&#x957F;&#x81F3;&#x5C11; 3 &#x5B57;&#x7B26;&#x6211;&#x4EEC;&#x624D;&#x4F1A;&#x5BF9;&#x5176;&#x8FDB;&#x884C;&#x5904;&#x7406;&#x3002;&#x4E3A;&#x6B64;&#xFF0C;&#x6211;&#x4EEC;&#x4F7F;&#x7528;&#x5185;&#x7F6E;&#x7684; <code>len</code> &#x51FD;&#x6570;&#x548C;&#x6765;&#x83B7;&#x53D6;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x957F;&#x5EA6;&#xFF0C;&#x5982;&#x679C;&#x5176;&#x957F;&#x5EA6;&#x5C0F;&#x4E8E; 3&#xFF0C;&#x6211;&#x4EEC;&#x4FBF;&#x901A;&#x8FC7;&#x4F7F;&#x7528; <code>continue</code> &#x8BED;&#x53E5;&#x8DF3;&#x8FC7;&#x4EE3;&#x7801;&#x5757;&#x4E2D;&#x7684;&#x5176;&#x4F59;&#x8BED;&#x53E5;&#x3002;&#x5426;&#x5219;&#xFF0C;&#x5FAA;&#x73AF;&#x4E2D;&#x7684;&#x5269;&#x4F59;&#x8BED;&#x53E5;&#x5C06;&#x88AB;&#x6267;&#x884C;&#xFF0C;&#x5E76;&#x5728;&#x6B64;&#x5904;&#x8FDB;&#x884C;&#x6211;&#x4EEC;&#x6240;&#x5E0C;&#x671B;&#x7684;&#x4EFB;&#x4F55;&#x7C7B;&#x578B;&#x7684;&#x5904;&#x7406;&#x3002;</p>
+<p>&#x8981;&#x6CE8;&#x610F; <code>continue</code> &#x8BED;&#x53E5;&#x540C;&#x6837;&#x80FD;&#x7528;&#x4E8E; <code>for</code> &#x5FAA;&#x73AF;&#x3002;</p>
+<h2 id="&#x603B;&#x7ED3;">&#x603B;&#x7ED3;</h2>
+<p>&#x6211;&#x4EEC;&#x5DF2;&#x7ECF;&#x4E86;&#x89E3;&#x4E86;&#x4E09;&#x79CD;&#x63A7;&#x5236;&#x6D41;&#x8BED;&#x53E5;&#x2014;&#x2014;<code>if</code>&#xFF0C;<code>while</code> &#x548C; <code>for</code> &#x2014;&#x2014;&#x53CA;&#x5176;&#x76F8;&#x5173;&#x7684; <code>break</code> &#x4E0E; <code>continue</code> &#x8BED;&#x53E5;&#x662F;&#x5982;&#x4F55;&#x5DE5;&#x4F5C;&#x7684;&#x3002;&#x8FD9;&#x4E9B;&#x8BED;&#x53E5;&#x662F; Python &#x4E2D;&#x4E00;&#x4E9B;&#x6700;&#x5E38;&#x7528;&#x7684;&#x90E8;&#x5206;&#xFF0C;&#x56E0;&#x6B64;&#xFF0C;&#x4E60;&#x60EF;&#x53BB;&#x4F7F;&#x7528;&#x5B83;&#x4EEC;&#x662F;&#x5FC5;&#x8981;&#x7684;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="05.operators_and_expressions.html" class="navigation navigation-prev " aria-label="Previous page: 5 核心：运算符与表达式">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="07.data_structures.html" class="navigation navigation-next " aria-label="Next page: 7 核心：数据结构">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"6 核心：控制流","level":"1.7","depth":1,"next":{"title":"7 核心：数据结构","level":"1.8","depth":1,"path":"07.data_structures.md","ref":"07.data_structures.md","articles":[]},"previous":{"title":"5 核心：运算符与表达式","level":"1.6","depth":1,"path":"05.operators_and_expressions.md","ref":"05.operators_and_expressions.md","articles":[]},"dir":"ltr"},"config":{"plugins":["numbered-headings","betterchinese","-search","search-pro"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"search-pro":{"cutWordLib":"nodejieba","defineWord":["Gitbook Use"]},"numbered-headings":{},"betterchinese":{},"highlight":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"","pdf":{"pageNumbers":true,"fontSize":14,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"简明Python教程-BNU版","language":"zh-hans","gitbook":"*","description":"北师大天文系Pythonj讲义"},"file":{"path":"06.control.md","mtime":"2018-10-08T01:01:31.205Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-02-17T06:48:59.306Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
